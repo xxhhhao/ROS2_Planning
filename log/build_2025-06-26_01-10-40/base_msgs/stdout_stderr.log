@@ -1,0 +1,6 @@
+-- Configuring incomplete, errors occurred!
+[31mCMake Error at CMakeLists.txt:5 (if):
+  Flow control statements are not properly nested.
+
+[0m
+gmake: *** [Makefile:226：cmake_check_build_system] 错误 1

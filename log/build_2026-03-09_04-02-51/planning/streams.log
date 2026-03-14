@@ -1,0 +1,24 @@
+[0.519s] Invoking command in '/home/lh/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j8 -l8
+[0.660s] [  5%] Built target config_reader
+[0.667s] [ 14%] Built target mathlibs
+[0.746s] [ 20%] Built target global_planner
+[0.749s] [ 28%] Built target vehicle_info
+[0.762s] [ 37%] Built target pnc_map_creator
+[0.805s] [ 40%] [32mBuilding CXX object src/reference_line/CMakeFiles/reference_line.dir/reference_line_creator.cpp.o[0m
+[0.840s] [ 45%] Built target global_path_server
+[0.844s] [ 51%] Built target obs_move_cmd
+[0.863s] [ 57%] Built target decision_center
+[0.869s] [ 62%] Built target car_move_cmd
+[0.873s] [ 68%] Built target pnc_map_server
+[0.952s] [ 85%] Built target local_planner
+[1.483s] In file included from [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/reference_line/reference_line_creator.cpp:1[m[K:
+[1.484s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/reference_line/reference_line_creator.h:5:10:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+[1.484s]     5 | #include [01;35m[K"[m[Kconfig_reader.h
+[1.484s]       |          [01;35m[K^[m[K
+[1.484s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/reference_line/reference_line_creator.h:5:10:[m[K [01;31m[Kerror: [m[K#include expects "FILENAME" or <FILENAME>
+[1.484s]     5 | #include [01;31m[K"config_reader.h[m[K
+[1.484s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.678s] gmake[2]: *** [src/reference_line/CMakeFiles/reference_line.dir/build.make:76：src/reference_line/CMakeFiles/reference_line.dir/reference_line_creator.cpp.o] 错误 1
+[6.679s] gmake[1]: *** [CMakeFiles/Makefile2:607：src/reference_line/CMakeFiles/reference_line.dir/all] 错误 2
+[6.679s] gmake: *** [Makefile:146：all] 错误 2
+[6.684s] Invoked command in '/home/lh/planning_with_ROS2_course/build/planning' returned '2': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j8 -l8

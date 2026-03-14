@@ -1,0 +1,62 @@
+[0.235s] Invoking command in '/home/lh/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/lh/planning_with_ROS2_course/src/planning -DCMAKE_INSTALL_PREFIX=/home/lh/planning_with_ROS2_course/install/planning
+[0.309s] -- The C compiler identification is GNU 13.3.0
+[0.379s] -- The CXX compiler identification is GNU 13.3.0
+[0.404s] -- Detecting C compiler ABI info
+[0.531s] -- Detecting C compiler ABI info - done
+[0.539s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.540s] -- Detecting C compile features
+[0.540s] -- Detecting C compile features - done
+[0.554s] -- Detecting CXX compiler ABI info
+[0.695s] -- Detecting CXX compiler ABI info - done
+[0.704s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.705s] -- Detecting CXX compile features
+[0.705s] -- Detecting CXX compile features - done
+[0.708s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.872s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.988s] -- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.070s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.093s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.128s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.160s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.297s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.304s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.459s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.487s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.518s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.641s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.749s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.749s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/lh/planning_with_ROS2_course/src/planning/include>
+[1.749s] -- Configured cppcheck exclude dirs and/or files: 
+[1.750s] -- Added test 'lint_cmake' to check CMake code style
+[1.751s] -- Added test 'uncrustify' to check C / C++ code style
+[1.751s] -- Configured uncrustify additional arguments: 
+[1.752s] -- Added test 'xmllint' to check XML markup files
+[1.754s] -- Configuring done (1.5s)
+[1.768s] -- Generating done (0.0s)
+[1.772s] -- Build files have been written to: /home/lh/planning_with_ROS2_course/build/planning
+[1.786s] Invoked command in '/home/lh/planning_with_ROS2_course/build/planning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/lh/planning_with_ROS2_course/src/planning -DCMAKE_INSTALL_PREFIX=/home/lh/planning_with_ROS2_course/install/planning
+[1.787s] Invoking command in '/home/lh/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j8 -l8
+[1.861s] [ 50%] [32mBuilding CXX object CMakeFiles/planning_node.dir/src/planning_node.cpp.o[0m
+[1.933s] [100%] [32m[1mLinking CXX executable planning_node[0m
+[2.064s] [100%] Built target planning_node
+[2.079s] Invoked command in '/home/lh/planning_with_ROS2_course/build/planning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j8 -l8
+[2.080s] Invoking command in '/home/lh/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/lh/planning_with_ROS2_course/build/planning
+[2.092s] -- Install configuration: ""
+[2.092s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/planning/planning_node
+[2.092s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/planning/planning_node" to ""
+[2.093s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/package_run_dependencies/planning
+[2.093s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/parent_prefix_path/planning
+[2.094s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/ament_prefix_path.sh
+[2.094s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/ament_prefix_path.dsv
+[2.094s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/path.sh
+[2.094s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/path.dsv
+[2.095s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.bash
+[2.095s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.sh
+[2.095s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.zsh
+[2.095s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.dsv
+[2.096s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/planning/package.dsv
+[2.096s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/packages/planning
+[2.096s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/planning/cmake/planningConfig.cmake
+[2.096s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/planning/cmake/planningConfig-version.cmake
+[2.096s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/planning/package.xml
+[2.100s] Invoked command in '/home/lh/planning_with_ROS2_course/build/planning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/lh/planning_with_ROS2_course/build/planning

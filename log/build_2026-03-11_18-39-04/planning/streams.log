@@ -1,0 +1,80 @@
+[0.600s] Invoking command in '/home/lh/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j16 -l16
+[0.866s] [  8%] Built target mathlibs
+[0.895s] [ 11%] [32mBuilding CXX object src/common/CMakeFiles/config_reader.dir/config_reader/config_reader.cpp.o[0m
+[10.873s] [ 14%] [32m[1mLinking CXX shared library libconfig_reader.so[0m
+[11.253s] [ 14%] Built target config_reader
+[11.341s] [ 17%] [32m[1mLinking CXX shared library libvehicle_info.so[0m
+[11.343s] [ 20%] [32m[1mLinking CXX shared library libpnc_map_creator.so[0m
+[11.358s] [ 22%] [32m[1mLinking CXX shared library libreference_line.so[0m
+[11.358s] [ 25%] [32m[1mLinking CXX shared library libglobal_planner.so[0m
+[11.722s] [ 37%] Built target reference_line
+[11.722s] [ 37%] Built target vehicle_info
+[11.746s] [ 42%] Built target pnc_map_creator
+[11.814s] [ 48%] [32m[1mLinking CXX executable obs_move_cmd[0m
+[11.814s] [ 48%] [32m[1mLinking CXX executable car_move_cmd[0m
+[11.815s] [ 51%] [32m[1mLinking CXX shared library libdecision_center.so[0m
+[11.831s] [ 54%] [32m[1mLinking CXX executable pnc_map_server[0m
+[11.919s] [ 57%] Built target global_planner
+[12.017s] [ 60%] [32m[1mLinking CXX executable global_path_server[0m
+[12.168s] [ 62%] Built target decision_center
+[12.229s] [ 65%] Built target pnc_map_server
+[12.285s] [ 68%] [32m[1mLinking CXX shared library liblocal_planner.so[0m
+[12.306s] [ 71%] Built target obs_move_cmd
+[12.312s] [ 74%] Built target car_move_cmd
+[12.424s] [ 77%] Built target global_path_server
+[12.601s] [ 91%] Built target local_planner
+[12.704s] [ 94%] [32m[1mLinking CXX executable planning_node[0m
+[13.256s] [100%] Built target planning_node
+[13.293s] Invoked command in '/home/lh/planning_with_ROS2_course/build/planning' returned '0': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j16 -l16
+[13.300s] Invoking command in '/home/lh/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/lh/planning_with_ROS2_course/build/planning
+[13.319s] -- Install configuration: ""
+[13.322s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libconfig_reader.so
+[13.324s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libconfig_reader.so" to ""
+[13.326s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/lib/libmathlibs.so
+[13.329s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libdecision_center.so
+[13.330s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libdecision_center.so" to ""
+[13.333s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libglobal_planner.so
+[13.334s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libglobal_planner.so" to ""
+[13.338s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/planning/global_path_server
+[13.339s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/planning/global_path_server" to ""
+[13.342s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/liblocal_planner.so
+[13.343s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/liblocal_planner.so" to ""
+[13.346s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/{PLANNING_PACKAGE_NAME}/car_move_cmd
+[13.348s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/{PLANNING_PACKAGE_NAME}/car_move_cmd" to ""
+[13.350s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/{PLANNING_PACKAGE_NAME}/obs_move_cmd
+[13.352s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/{PLANNING_PACKAGE_NAME}/obs_move_cmd" to ""
+[13.355s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/planning/planning_node
+[13.357s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/planning/planning_node" to ""
+[13.360s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libpnc_map_creator.so
+[13.361s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libpnc_map_creator.so" to ""
+[13.364s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/planning/libpnc_map_creator.so
+[13.364s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/planning/libpnc_map_creator.so" to ""
+[13.368s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libreference_line.so
+[13.369s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libreference_line.so" to ""
+[13.372s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libvehicle_info.so
+[13.373s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libvehicle_info.so" to ""
+[13.375s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/config
+[13.376s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/config/planning_static_obs_config.yaml
+[13.376s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/launch
+[13.379s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf
+[13.382s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car
+[13.383s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_person
+[13.383s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_car
+[13.384s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_ebike
+[13.385s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/rviz
+[13.386s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/package_run_dependencies/planning
+[13.387s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/parent_prefix_path/planning
+[13.388s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/ament_prefix_path.sh
+[13.389s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/ament_prefix_path.dsv
+[13.389s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/path.sh
+[13.389s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/path.dsv
+[13.389s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.bash
+[13.390s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.sh
+[13.390s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.zsh
+[13.391s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.dsv
+[13.391s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/planning/package.dsv
+[13.394s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/packages/planning
+[13.394s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/cmake/planningConfig.cmake
+[13.395s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/cmake/planningConfig-version.cmake
+[13.395s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/package.xml
+[13.404s] Invoked command in '/home/lh/planning_with_ROS2_course/build/planning' returned '0': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/lh/planning_with_ROS2_course/build/planning

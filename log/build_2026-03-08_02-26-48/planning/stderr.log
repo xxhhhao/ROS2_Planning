@@ -1,0 +1,11 @@
+In file included from [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/decision_center/decision_center.cpp:1[m[K:
+[01m[K/home/lh/planning_with_ROS2_course/src/planning/src/decision_center/decision_center.h:16:9:[m[K [01;35m[Kwarning: [m[Kextra tokens at end of #endif directive [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wendif-labels-Wendif-labels]8;;[m[K]
+   16 | #endif  [01;35m[KDECISION_CENTER_H_[m[K
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lh/planning_with_ROS2_course/src/planning/src/decision_center/decision_center.cpp:6:36:[m[K [01;31m[Kerror: [m[Kdefinition of implicitly-declared ‘[01m[Kconstexpr Planning::DecisionCenter::[01;32m[KDecisionCenter[m[K()[m[K’
+    6 |     DecisionCenter::DecisionCenter([01;31m[K)[m[K
+      |                                    [01;31m[K^[m[K
+gmake[2]: *** [src/decision_center/CMakeFiles/decision_center.dir/build.make:76：src/decision_center/CMakeFiles/decision_center.dir/decision_center.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:350：src/decision_center/CMakeFiles/decision_center.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+gmake: *** [Makefile:146：all] 错误 2

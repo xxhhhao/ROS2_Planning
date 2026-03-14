@@ -1,0 +1,22 @@
+[0.028s] Invoking command in '/home/lh/planning_with_ROS2_course/build/base_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/base_msgs -- -j8 -l8
+[0.273s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.344s] [31mCMake Error at CMakeLists.txt:23 (find_package):
+[0.344s]   By not providing "Findrosdil_default_generators.cmake" in CMAKE_MODULE_PATH
+[0.344s]   this project has asked CMake to find a package configuration file provided
+[0.344s]   by "rosdil_default_generators", but CMake did not find one.
+[0.344s] 
+[0.345s]   Could not find a package configuration file provided by
+[0.345s]   "rosdil_default_generators" with any of the following names:
+[0.345s] 
+[0.345s]     rosdil_default_generatorsConfig.cmake
+[0.345s]     rosdil_default_generators-config.cmake
+[0.345s] 
+[0.345s]   Add the installation prefix of "rosdil_default_generators" to
+[0.345s]   CMAKE_PREFIX_PATH or set "rosdil_default_generators_DIR" to a directory
+[0.345s]   containing one of the above files.  If "rosdil_default_generators" provides
+[0.345s]   a separate development package or SDK, be sure it has been installed.
+[0.345s] 
+[0.345s] [0m
+[0.346s] -- Configuring incomplete, errors occurred!
+[0.350s] gmake: *** [Makefile:226：cmake_check_build_system] 错误 1
+[0.353s] Invoked command in '/home/lh/planning_with_ROS2_course/build/base_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/base_msgs -- -j8 -l8

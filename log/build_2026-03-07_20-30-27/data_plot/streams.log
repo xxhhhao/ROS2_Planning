@@ -1,0 +1,37 @@
+[2.967s] Invoking command in '/home/lh/planning_with_ROS2_course/src/data_plot': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lh/planning_with_ROS2_course/build/data_plot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/data_plot build --build-base /home/lh/planning_with_ROS2_course/build/data_plot/build install --record /home/lh/planning_with_ROS2_course/build/data_plot/install.log --single-version-externally-managed install_data
+[3.741s] running egg_info
+[3.741s] creating ../../build/data_plot/data_plot.egg-info
+[3.789s] writing ../../build/data_plot/data_plot.egg-info/PKG-INFO
+[3.789s] writing dependency_links to ../../build/data_plot/data_plot.egg-info/dependency_links.txt
+[3.789s] writing entry points to ../../build/data_plot/data_plot.egg-info/entry_points.txt
+[3.790s] writing requirements to ../../build/data_plot/data_plot.egg-info/requires.txt
+[3.790s] writing top-level names to ../../build/data_plot/data_plot.egg-info/top_level.txt
+[3.790s] writing manifest file '../../build/data_plot/data_plot.egg-info/SOURCES.txt'
+[3.882s] reading manifest file '../../build/data_plot/data_plot.egg-info/SOURCES.txt'
+[3.885s] writing manifest file '../../build/data_plot/data_plot.egg-info/SOURCES.txt'
+[3.886s] running build
+[3.886s] running build_py
+[3.886s] creating /home/lh/planning_with_ROS2_course/build/data_plot/build
+[3.888s] creating /home/lh/planning_with_ROS2_course/build/data_plot/build/lib
+[3.888s] creating /home/lh/planning_with_ROS2_course/build/data_plot/build/lib/data_plot
+[3.888s] copying data_plot/__init__.py -> /home/lh/planning_with_ROS2_course/build/data_plot/build/lib/data_plot
+[3.888s] copying data_plot/data_plot.py -> /home/lh/planning_with_ROS2_course/build/data_plot/build/lib/data_plot
+[3.888s] running install
+[3.910s] running install_lib
+[3.959s] creating /home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages/data_plot
+[3.960s] copying /home/lh/planning_with_ROS2_course/build/data_plot/build/lib/data_plot/__init__.py -> /home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages/data_plot
+[3.961s] copying /home/lh/planning_with_ROS2_course/build/data_plot/build/lib/data_plot/data_plot.py -> /home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages/data_plot
+[3.961s] byte-compiling /home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages/data_plot/__init__.py to __init__.cpython-312.pyc
+[3.962s] byte-compiling /home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages/data_plot/data_plot.py to data_plot.cpython-312.pyc
+[3.963s] running install_data
+[3.963s] creating /home/lh/planning_with_ROS2_course/install/data_plot/share/ament_index
+[3.964s] creating /home/lh/planning_with_ROS2_course/install/data_plot/share/ament_index/resource_index
+[3.964s] creating /home/lh/planning_with_ROS2_course/install/data_plot/share/ament_index/resource_index/packages
+[3.964s] copying resource/data_plot -> /home/lh/planning_with_ROS2_course/install/data_plot/share/ament_index/resource_index/packages
+[3.964s] copying package.xml -> /home/lh/planning_with_ROS2_course/install/data_plot/share/data_plot
+[3.964s] running install_egg_info
+[4.011s] Copying ../../build/data_plot/data_plot.egg-info to /home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages/data_plot-0.0.0-py3.12.egg-info
+[4.014s] running install_scripts
+[4.319s] Installing data_plot script to /home/lh/planning_with_ROS2_course/install/data_plot/lib/data_plot
+[4.319s] writing list of installed files to '/home/lh/planning_with_ROS2_course/build/data_plot/install.log'
+[4.403s] Invoked command in '/home/lh/planning_with_ROS2_course/src/data_plot' returned '0': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lh/planning_with_ROS2_course/build/data_plot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/data_plot build --build-base /home/lh/planning_with_ROS2_course/build/data_plot/build install --record /home/lh/planning_with_ROS2_course/build/data_plot/install.log --single-version-externally-managed install_data

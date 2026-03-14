@@ -1,0 +1,76 @@
+[ 11%] Built target mathlibs
+[  8%] [32mBuilding CXX object src/common/CMakeFiles/config_reader.dir/config_reader/config_reader.cpp.o[0m
+[ 14%] [32m[1mLinking CXX shared library libconfig_reader.so[0m
+[ 14%] Built target config_reader
+[ 17%] [32m[1mLinking CXX shared library libglobal_planner.so[0m
+[ 20%] [32m[1mLinking CXX shared library libpnc_map_creator.so[0m
+[ 22%] [32m[1mLinking CXX shared library libvehicle_info.so[0m
+[ 25%] [32m[1mLinking CXX shared library libreference_line.so[0m
+[ 31%] Built target pnc_map_creator
+[ 34%] Built target global_planner
+[ 40%] Built target vehicle_info
+[ 45%] Built target reference_line
+[ 48%] [32m[1mLinking CXX executable global_path_server[0m
+[ 51%] [32m[1mLinking CXX executable car_move_cmd[0m
+[ 54%] [32m[1mLinking CXX executable pnc_map_server[0m
+[ 57%] [32m[1mLinking CXX shared library libdecision_center.so[0m
+[ 60%] [32m[1mLinking CXX executable obs_move_cmd[0m
+[ 62%] Built target decision_center
+[ 68%] Built target global_path_server
+[ 68%] Built target pnc_map_server
+[ 74%] Built target car_move_cmd
+[ 74%] Built target obs_move_cmd
+[ 77%] [32m[1mLinking CXX shared library liblocal_planner.so[0m
+[ 91%] Built target local_planner
+[ 94%] [32m[1mLinking CXX executable planning_node[0m
+[100%] Built target planning_node
+-- Install configuration: ""
+-- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libconfig_reader.so
+-- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libconfig_reader.so" to ""
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/lib/libmathlibs.so
+-- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libdecision_center.so
+-- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libdecision_center.so" to ""
+-- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libglobal_planner.so
+-- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libglobal_planner.so" to ""
+-- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/planning/global_path_server
+-- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/planning/global_path_server" to ""
+-- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/liblocal_planner.so
+-- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/liblocal_planner.so" to ""
+-- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/{PLANNING_PACKAGE_NAME}/car_move_cmd
+-- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/{PLANNING_PACKAGE_NAME}/car_move_cmd" to ""
+-- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/{PLANNING_PACKAGE_NAME}/obs_move_cmd
+-- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/{PLANNING_PACKAGE_NAME}/obs_move_cmd" to ""
+-- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/planning/planning_node
+-- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/planning/planning_node" to ""
+-- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libpnc_map_creator.so
+-- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libpnc_map_creator.so" to ""
+-- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/planning/libpnc_map_creator.so
+-- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/planning/libpnc_map_creator.so" to ""
+-- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libreference_line.so
+-- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libreference_line.so" to ""
+-- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libvehicle_info.so
+-- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libvehicle_info.so" to ""
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/config
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/config/planning_static_obs_config.yaml
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/launch
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_person
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_car
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_ebike
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/rviz
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/package_run_dependencies/planning
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/parent_prefix_path/planning
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/ament_prefix_path.sh
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/path.sh
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/path.dsv
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.bash
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.sh
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.zsh
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.dsv
+-- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/planning/package.dsv
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/packages/planning
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/cmake/planningConfig.cmake
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/cmake/planningConfig-version.cmake
+-- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/package.xml

@@ -1,0 +1,5 @@
+[31mCMake Error at src/local_planner/CMakeLists.txt:32 (target_link_library):
+  Unknown CMake command "target_link_library".
+
+[0m
+gmake: *** [Makefile:408：cmake_check_build_system] 错误 1

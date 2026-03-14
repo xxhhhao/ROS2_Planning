@@ -1,0 +1,5 @@
+[31mCMake Error at CMakeLists.txt:7 (id):
+  Unknown CMake command "id".
+
+[0m
+gmake: *** [Makefile:226：cmake_check_build_system] 错误 1

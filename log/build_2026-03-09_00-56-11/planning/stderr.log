@@ -1,0 +1,16 @@
+[31mCMake Error at src/pnc_map_creator/CMakeLists.txt:23 (add_executable):
+  add_executable cannot create target "pnc_map_creator" because another
+  target with the same name already exists.  The existing target is a shared
+  library created in source directory
+  "/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator".  See
+  documentation for policy CMP0002 for more details.
+
+[0m
+[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+  ament_target_dependencies() the passed package name 'visualization_msg' was
+  not found before
+Call Stack (most recent call first):
+  src/pnc_map_creator/CMakeLists.txt:37 (ament_target_dependencies)
+
+[0m
+gmake: *** [Makefile:352：cmake_check_build_system] 错误 1

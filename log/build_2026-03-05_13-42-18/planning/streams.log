@@ -1,0 +1,63 @@
+[1.187s] Invoking command in '/home/lh/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j8 -l8
+[1.505s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.835s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[3.010s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[3.067s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[3.140s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.223s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.659s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.687s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[4.170s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.648s] -- Found tf2: 0.36.16 (/opt/ros/jazzy/share/tf2/cmake)
+[4.875s] -- Found tf2_ros: 0.36.16 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[5.812s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[5.951s] -- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[6.189s] -- Found base_msgs: 0.0.0 (/home/lh/planning_with_ROS2_course/install/base_msgs/share/base_msgs/cmake)
+[6.350s] [31mCMake Error at CMakeLists.txt:71 (add_subdirectory):
+[6.350s]   The source directory
+[6.351s] 
+[6.351s]     /home/lh/planning_with_ROS2_course/src/planning/src/move_cmd
+[6.353s] 
+[6.354s]   does not contain a CMakeLists.txt file.
+[6.356s] 
+[6.356s] [0m
+[6.360s] [31mCMake Error at CMakeLists.txt:72 (add_subdirectory):
+[6.363s]   The source directory
+[6.364s] 
+[6.366s]     /home/lh/planning_with_ROS2_course/src/planning/src/planning_process
+[6.367s] 
+[6.370s]   does not contain a CMakeLists.txt file.
+[6.373s] 
+[6.373s] [0m
+[6.374s] [31mCMake Error at CMakeLists.txt:73 (add_subdirectory):
+[6.381s]   add_subdirectory given source "src/pnc_map_creator" which is not an
+[6.381s]   existing directory.
+[6.382s] 
+[6.384s] [0m
+[6.386s] [31mCMake Error at CMakeLists.txt:74 (add_subdirectory):
+[6.387s]   The source directory
+[6.390s] 
+[6.391s]     /home/lh/planning_with_ROS2_course/src/planning/src/reference_line
+[6.392s] 
+[6.393s]   does not contain a CMakeLists.txt file.
+[6.393s] 
+[6.398s] [0m
+[6.399s] [31mCMake Error at CMakeLists.txt:75 (add_subdirectory):
+[6.400s]   The source directory
+[6.401s] 
+[6.402s]     /home/lh/planning_with_ROS2_course/src/planning/src/vehicle_info
+[6.403s] 
+[6.404s]   does not contain a CMakeLists.txt file.
+[6.407s] 
+[6.408s] [0m
+[6.411s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[6.956s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.957s] -- Configured cppcheck include dirs: /home/lh/planning_with_ROS2_course/src/planning/src/common/config_reader;/home/lh/planning_with_ROS2_course/src/planning/src/common/math;/home/lh/planning_with_ROS2_course/src/planning/src/decision_center;/home/lh/planning_with_ROS2_course/src/planning/src/global_planner;/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_normal;/home/lh/planning_with_ROS2_course/src/planning/src/local_planner;/home/lh/planning_with_ROS2_course/src/planning/src/local_planner/local_path;/home/lh/planning_with_ROS2_course/src/planning/src/local_planner/local_speeds;/home/lh/planning_with_ROS2_course/src/planning/src/move_cmd;/home/lh/planning_with_ROS2_course/src/planning/src/planning_process;/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator;/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_crossroad;/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_roundabout;/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_straight;/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_sturn;/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_tjunction;/home/lh/planning_with_ROS2_course/src/planning/src/reference_line;/home/lh/planning_with_ROS2_course/src/planning/src/vehicle_info;/home/lh/planning_with_ROS2_course/src/planning/src/vehicle_info/main_car;/home/lh/planning_with_ROS2_course/src/planning/src/vehicle_info/obs_car;/home/lh/planning_with_ROS2_course/src/planning/src/vehicle_info/obs_rbike;/home/lh/planning_with_ROS2_course/src/planning/src/vehicle_info/obs_people
+[6.958s] -- Configured cppcheck exclude dirs and/or files: 
+[7.017s] -- Added test 'lint_cmake' to check CMake code style
+[7.090s] -- Added test 'uncrustify' to check C / C++ code style
+[7.091s] -- Configured uncrustify additional arguments: 
+[7.098s] -- Added test 'xmllint' to check XML markup files
+[7.125s] -- Configuring incomplete, errors occurred!
+[7.215s] gmake: *** [Makefile:267：cmake_check_build_system] 错误 1
+[7.234s] Invoked command in '/home/lh/planning_with_ROS2_course/build/planning' returned '2': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j8 -l8

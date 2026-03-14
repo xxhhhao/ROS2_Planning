@@ -1,0 +1,12 @@
+[31mCMake Error at src/local_planner/CMakeLists.txt:14 (add_library):
+  Cannot find source file:
+
+    /home/lh/planning_with_ROS2_course/src/planning/src/local_planner/local_path/local_path_planner.cpp
+
+[0m
+[31mCMake Error at src/local_planner/CMakeLists.txt:14 (add_library):
+  No SOURCES given to target: local_planner
+
+[0m
+[0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+gmake: *** [Makefile:310：cmake_check_build_system] 错误 1

@@ -1,0 +1,48 @@
+[0.044s] Invoking command in '/home/lh/planning_with_ROS2_course/build/base_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/lh/planning_with_ROS2_course/src/base_msgs -DCMAKE_INSTALL_PREFIX=/home/lh/planning_with_ROS2_course/install/base_msgs
+[0.307s] -- The C compiler identification is GNU 13.3.0
+[0.499s] -- The CXX compiler identification is GNU 13.3.0
+[0.567s] -- Detecting C compiler ABI info
+[0.838s] -- Detecting C compiler ABI info - done
+[0.855s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.859s] -- Detecting C compile features
+[0.859s] -- Detecting C compile features - done
+[0.923s] -- Detecting CXX compiler ABI info
+[1.250s] -- Detecting CXX compiler ABI info - done
+[1.271s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.271s] -- Detecting CXX compile features
+[1.272s] -- Detecting CXX compile features - done
+[1.302s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.677s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.058s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[2.086s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.293s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.449s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[2.468s] -- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[2.887s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[2.978s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.250s] -- Added test 'lint_cmake' to check CMake code style
+[3.256s] -- Added test 'xmllint' to check XML markup files
+[3.262s] -- Configuring done (3.2s)
+[3.272s] -- Generating done (0.0s)
+[3.276s] -- Build files have been written to: /home/lh/planning_with_ROS2_course/build/base_msgs
+[3.298s] Invoked command in '/home/lh/planning_with_ROS2_course/build/base_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/lh/planning_with_ROS2_course/src/base_msgs -DCMAKE_INSTALL_PREFIX=/home/lh/planning_with_ROS2_course/install/base_msgs
+[3.299s] Invoking command in '/home/lh/planning_with_ROS2_course/build/base_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/base_msgs -- -j8 -l8
+[3.418s] Invoked command in '/home/lh/planning_with_ROS2_course/build/base_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/base_msgs -- -j8 -l8
+[3.441s] Invoking command in '/home/lh/planning_with_ROS2_course/build/base_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/lh/planning_with_ROS2_course/build/base_msgs
+[3.468s] -- Install configuration: ""
+[3.469s] -- Installing: /home/lh/planning_with_ROS2_course/install/base_msgs/share/ament_index/resource_index/package_run_dependencies/base_msgs
+[3.469s] -- Installing: /home/lh/planning_with_ROS2_course/install/base_msgs/share/ament_index/resource_index/parent_prefix_path/base_msgs
+[3.470s] -- Installing: /home/lh/planning_with_ROS2_course/install/base_msgs/share/base_msgs/environment/ament_prefix_path.sh
+[3.471s] -- Installing: /home/lh/planning_with_ROS2_course/install/base_msgs/share/base_msgs/environment/ament_prefix_path.dsv
+[3.471s] -- Installing: /home/lh/planning_with_ROS2_course/install/base_msgs/share/base_msgs/environment/path.sh
+[3.472s] -- Installing: /home/lh/planning_with_ROS2_course/install/base_msgs/share/base_msgs/environment/path.dsv
+[3.472s] -- Installing: /home/lh/planning_with_ROS2_course/install/base_msgs/share/base_msgs/local_setup.bash
+[3.473s] -- Installing: /home/lh/planning_with_ROS2_course/install/base_msgs/share/base_msgs/local_setup.sh
+[3.473s] -- Installing: /home/lh/planning_with_ROS2_course/install/base_msgs/share/base_msgs/local_setup.zsh
+[3.473s] -- Installing: /home/lh/planning_with_ROS2_course/install/base_msgs/share/base_msgs/local_setup.dsv
+[3.473s] -- Installing: /home/lh/planning_with_ROS2_course/install/base_msgs/share/base_msgs/package.dsv
+[3.474s] -- Installing: /home/lh/planning_with_ROS2_course/install/base_msgs/share/ament_index/resource_index/packages/base_msgs
+[3.476s] -- Installing: /home/lh/planning_with_ROS2_course/install/base_msgs/share/base_msgs/cmake/base_msgsConfig.cmake
+[3.476s] -- Installing: /home/lh/planning_with_ROS2_course/install/base_msgs/share/base_msgs/cmake/base_msgsConfig-version.cmake
+[3.477s] -- Installing: /home/lh/planning_with_ROS2_course/install/base_msgs/share/base_msgs/package.xml
+[3.480s] Invoked command in '/home/lh/planning_with_ROS2_course/build/base_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/lh/planning_with_ROS2_course/build/base_msgs

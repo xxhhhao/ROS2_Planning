@@ -1,0 +1,36 @@
+[  5%] Built target config_reader
+[ 14%] Built target mathlibs
+[ 20%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_straight/pnc_map_creator_straight.cpp.o[0m
+[ 22%] Built target global_planner
+[ 25%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_sturn/pnc_map_creator_sturn.cpp.o[0m
+[ 34%] [32mBuilding CXX object src/reference_line/CMakeFiles/reference_line.dir/reference_line_creator.cpp.o[0m
+[ 34%] [32mBuilding CXX object src/reference_line/CMakeFiles/reference_line.dir/reference_line_smoother.cpp.o[0m
+[ 40%] Built target vehicle_info
+[ 45%] Built target global_path_server
+[ 51%] Built target car_move_cmd
+[ 57%] Built target decision_center
+[ 62%] Built target obs_move_cmd
+[ 80%] Built target local_planner
+In file included from [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/reference_line/reference_line_creator.cpp:1[m[K:
+[01m[K/home/lh/planning_with_ROS2_course/src/planning/src/reference_line/reference_line_creator.h:5:10:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+    5 | #include [01;35m[K"[m[Kconfig_reader.h
+      |          [01;35m[K^[m[K
+[01m[K/home/lh/planning_with_ROS2_course/src/planning/src/reference_line/reference_line_creator.h:5:10:[m[K [01;31m[Kerror: [m[K#include expects "FILENAME" or <FILENAME>
+    5 | #include [01;31m[K"config_reader.h[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lh/planning_with_ROS2_course/src/planning/src/reference_line/reference_line_creator.h:7:10:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+    7 | #include [01;35m[K"[m[Kreference_line_smoother.h
+      |          [01;35m[K^[m[K
+[01m[K/home/lh/planning_with_ROS2_course/src/planning/src/reference_line/reference_line_creator.h:7:10:[m[K [01;31m[Kerror: [m[K#include expects "FILENAME" or <FILENAME>
+    7 | #include [01;31m[K"reference_line_smoother.h[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [src/reference_line/CMakeFiles/reference_line.dir/build.make:76：src/reference_line/CMakeFiles/reference_line.dir/reference_line_creator.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+[ 82%] [32m[1mLinking CXX shared library libpnc_map_creator.so[0m
+[ 82%] Built target pnc_map_creator
+[ 85%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o[0m
+gmake[1]: *** [CMakeFiles/Makefile2:607：src/reference_line/CMakeFiles/reference_line.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+[ 88%] [32m[1mLinking CXX executable pnc_map_server[0m
+[ 88%] Built target pnc_map_server
+gmake: *** [Makefile:146：all] 错误 2
