@@ -26,10 +26,10 @@ namespace Planning
    {
       std::string frame_ = "";      //坐标系
       int type_=0;                  //类型
-      double road_length = 0.0;     //道路宽度
-      double road_half_width = 0.0; //车道半宽
+      double road_length_ = 0.0;     //道路宽度
+      double road_half_width_ = 0.0; //车道半宽
       double segment_len_ = 0.0;    //道路分段长度
-      double speed_limit = 0.0;     //限速
+      double speed_limit_ = 0.0;     //限速
    };
    struct GlobalPathStruct
    {
@@ -61,10 +61,10 @@ namespace Planning
    };
 
 
-class ConfigerReader
+class ConfigReader
 {
 public:
-   ConfigerReader();
+   ConfigReader();
 
    void read_vehicle_config(VehicleStruct &vehicle,const std::string &name);
    void read_vehicles_config();

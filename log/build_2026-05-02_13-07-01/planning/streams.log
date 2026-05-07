@@ -1,0 +1,70 @@
+[0.532s] Invoking command in '/home/lh/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/python3.12/site-packages:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j16 -l16
+[0.684s] [  5%] Built target config_reader
+[0.689s] [ 14%] Built target mathlibs
+[0.767s] [ 22%] Built target vehicle_info
+[0.770s] [ 31%] Built target pnc_map_creator
+[0.771s] [ 40%] Built target reference_line
+[0.785s] [ 42%] [32mBuilding CXX object src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o[0m
+[0.840s] [ 48%] Built target decision_center
+[0.842s] [ 54%] Built target car_move_cmd
+[0.843s] [ 60%] Built target obs_move_cmd
+[0.847s] [ 65%] Built target pnc_map_server
+[0.929s] [ 82%] Built target local_planner
+[1.012s] [ 91%] Built target planning_process
+[8.959s] [ 94%] [32m[1mLinking CXX shared library libglobal_planner.so[0m
+[9.354s] [ 94%] Built target global_planner
+[9.447s] [ 97%] [32m[1mLinking CXX executable global_path_server[0m
+[10.089s] [100%] Built target global_path_server
+[10.128s] Invoked command in '/home/lh/planning_with_ROS2_course/build/planning' returned '0': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/python3.12/site-packages:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j16 -l16
+[10.130s] Invoking command in '/home/lh/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/python3.12/site-packages:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/lh/planning_with_ROS2_course/build/planning
+[10.153s] -- Install configuration: ""
+[10.155s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/lib/libconfig_reader.so
+[10.156s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/lib/libmathlibs.so
+[10.158s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/lib/libdecision_center.so
+[10.159s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libglobal_planner.so
+[10.161s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libglobal_planner.so" to ""
+[10.163s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/planning/global_path_server
+[10.170s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/planning/global_path_server" to ""
+[10.172s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/lib/liblocal_planner.so
+[10.179s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/lib/planning/car_move_cmd
+[10.181s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/lib/planning/obs_move_cmd
+[10.183s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/lib/planning/planning_process
+[10.185s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/lib/libpnc_map_creator.so
+[10.187s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/lib/planning/pnc_map_server
+[10.189s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/lib/libreference_line.so
+[10.190s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/lib/libvehicle_info.so
+[10.192s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/config
+[10.193s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/config/planning_static_obs_config.yaml
+[10.193s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/launch
+[10.193s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/launch/planning_launch.py
+[10.193s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf
+[10.194s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car
+[10.194s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_wheels.xacro
+[10.194s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_base.xacro
+[10.195s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_camera.xacro
+[10.195s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_radar.xacro
+[10.195s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car.xacro
+[10.195s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_person
+[10.195s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_person/obs_person.xacro
+[10.195s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_car
+[10.196s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_car/obs_car.xacro
+[10.196s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_ebike
+[10.196s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_ebike/obs_ebike.xacro
+[10.196s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/rviz
+[10.197s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/rviz/planning.rviz
+[10.197s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/package_run_dependencies/planning
+[10.197s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/parent_prefix_path/planning
+[10.197s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/ament_prefix_path.sh
+[10.197s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/ament_prefix_path.dsv
+[10.198s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/path.sh
+[10.198s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/path.dsv
+[10.198s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.bash
+[10.198s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.sh
+[10.198s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.zsh
+[10.199s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.dsv
+[10.199s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/planning/package.dsv
+[10.199s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/packages/planning
+[10.199s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/cmake/planningConfig.cmake
+[10.199s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/cmake/planningConfig-version.cmake
+[10.200s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/package.xml
+[10.205s] Invoked command in '/home/lh/planning_with_ROS2_course/build/planning' returned '0': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/python3.12/site-packages:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/lh/planning_with_ROS2_course/build/planning

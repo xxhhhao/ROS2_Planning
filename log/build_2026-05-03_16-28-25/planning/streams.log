@@ -1,0 +1,67 @@
+[0.580s] Invoking command in '/home/lh/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/python3.12/site-packages:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j16 -l16
+[0.762s] [  5%] Built target config_reader
+[0.765s] [ 14%] Built target mathlibs
+[0.858s] [ 28%] Built target vehicle_info
+[0.858s] [ 31%] Built target pnc_map_creator
+[0.862s] [ 37%] Built target global_planner
+[0.865s] [ 45%] Built target reference_line
+[0.942s] [ 51%] Built target car_move_cmd
+[0.945s] [ 57%] Built target decision_center
+[0.946s] [ 62%] Built target obs_move_cmd
+[0.949s] [ 68%] [32mBuilding CXX object src/global_planner/CMakeFiles/global_path_server.dir/global_path_server.cpp.o[0m
+[0.950s] [ 71%] Built target pnc_map_server
+[1.042s] [ 88%] Built target local_planner
+[1.136s] [ 97%] Built target planning_process
+[8.571s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:[m[K In constructor ‘[01m[KPlanning::GlobalPathServer::[01;32m[KGlobalPathServer[m[K()[m[K’:
+[8.571s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:11:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Planning::GlobalPathServer[m[K’ has no member named ‘[01m[Kcreate_publisherublisher[m[K’; did you mean ‘[01m[Kcreate_publisher[m[K’?
+[8.572s]    11 |         global_path_rviz_pub_ = this->[01;31m[Kcreate_publisherublisher[m[K<Marker>("global_path_rviz", 10);
+[8.572s]       |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.572s]       |                                       [32m[Kcreate_publisher[m[K
+[8.572s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:11:70:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[8.573s]    11 |         global_path_rviz_pub_ = this->create_publisherublisher<Marker[01;31m[K>[m[K("global_path_rviz", 10);
+[8.573s]       |                                                                      [01;31m[K^[m[K
+[8.573s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:11:72:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[8.574s]    11 |         global_path_rviz_pub_ = this->create_publisherublisher<Marker>([01;35m[K"global_path_rviz"[m[K, 10);
+[8.574s]       |                                                                        [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[8.574s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:13:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Planning::GlobalPathServer[m[K’ has no member named ‘[01m[Kcreate_service_service[m[K’; did you mean ‘[01m[Kcreate_service[m[K’?
+[8.574s]    13 |         global_path_server_ = this->[01;31m[Kcreate_service_service[m[K<GlobalPathService>(
+[8.574s]       |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.575s]       |                                     [32m[Kcreate_service[m[K
+[8.575s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:13:77:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[8.575s]    13 |         global_path_server_ = this->create_service_service<GlobalPathService[01;31m[K>[m[K(
+[8.575s]       |                                                                             [01;31m[K^[m[K
+[8.598s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:14:13:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[8.598s]    14 |             [01;35m[K"global_path_server"[m[K,
+[8.598s]       |             [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[8.605s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:[m[K At global scope:
+[8.605s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:17:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kshared_ptr_ptr[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type; did you mean ‘[01m[Kshared_ptr[m[K’?
+[8.606s]    17 |     void GlobalPathServer::response_global_path_callback(const std::[01;31m[Kshared_ptr_ptr[m[K<GlobalPathService::Request> request, std::shared_ptr_ptr<GlobalPathService::Response> response)
+[8.606s]       |                                                                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[8.606s]       |                                                                     [32m[Kshared_ptr[m[K
+[8.607s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:17:83:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+[8.607s]    17 |     void GlobalPathServer::response_global_path_callback(const std::shared_ptr_ptr[01;31m[K<[m[KGlobalPathService::Request> request, std::shared_ptr_ptr<GlobalPathService::Response> response)
+[8.607s]       |                                                                                   [01;31m[K^[m[K
+[8.607s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:17:10:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Planning::GlobalPathServer::[01;32m[Kresponse_global_path_callback[m[K(int)[m[K’
+[8.607s]    17 |     void [01;31m[KGlobalPathServer[m[K::response_global_path_callback(const std::shared_ptr_ptr<GlobalPathService::Request> request, std::shared_ptr_ptr<GlobalPathService::Response> response)
+[8.608s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[8.608s] In file included from [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:1[m[K:
+[8.608s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.h:26:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid Planning::GlobalPathServer::[01;32m[Kresponse_global_path_callback[m[K(std::shared_ptr<base_msgs::srv::GlobalPathService_Request_<std::allocator<void> > >, std::shared_ptr<base_msgs::srv::GlobalPathService_Response_<std::allocator<void> > >)[m[K’
+[8.608s]    26 |         void [01;36m[Kresponse_global_path_callback[m[K(const std::shared_ptr<GlobalPathService::Request> request,
+[8.608s]       |              [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.609s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.h:20:11:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Planning::GlobalPathServer[m[K’ defined here
+[8.610s]    20 |     class [01;36m[KGlobalPathServer[m[K : public rclcpp::Node
+[8.610s]       |           [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[8.620s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[8.620s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:98:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_shared_shared[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[8.621s]    98 |     auto node = std::[01;31m[Kmake_shared_shared[m[K<Planning::GlobalPathServer>();
+[8.621s]       |                      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[8.621s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:98:67:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[8.621s]    98 |     auto node = std::make_shared_shared<Planning::GlobalPathServer[01;31m[K>[m[K();
+[8.622s]       |                                                                   [01;31m[K^[m[K
+[8.622s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:98:69:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[8.622s]    98 |     auto node = std::make_shared_shared<Planning::GlobalPathServer>([01;31m[K)[m[K;
+[8.622s]       |                                                                     [01;31m[K^[m[K
+[11.703s] gmake[2]: *** [src/global_planner/CMakeFiles/global_path_server.dir/build.make:76：src/global_planner/CMakeFiles/global_path_server.dir/global_path_server.cpp.o] 错误 1
+[11.704s] gmake[1]: *** [CMakeFiles/Makefile2:411：src/global_planner/CMakeFiles/global_path_server.dir/all] 错误 2
+[11.705s] gmake: *** [Makefile:146：all] 错误 2
+[11.716s] Invoked command in '/home/lh/planning_with_ROS2_course/build/planning' returned '2': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/python3.12/site-packages:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j16 -l16

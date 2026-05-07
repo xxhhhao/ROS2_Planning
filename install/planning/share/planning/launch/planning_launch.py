@@ -9,7 +9,7 @@ import os
 
 def generate_launch_description():
 
-    #路径
+    #路径设置
     planning_path = get_package_share_directory("planning")
 
     #main_car模型位置
@@ -18,7 +18,7 @@ def generate_launch_description():
     #rviz文件位置
     rviz_conf_path = os.path.join(planning_path,"rviz","planning.rviz")
 
-    #xacro命令行指令，启动urdf文件
+    #xacro命令行指令，启动urdf文件，注意后面要加空格
     car_para = ParameterValue(Command(["xacro ",car_path]))
 
     #启动robot_state_publisher节点
@@ -52,14 +52,25 @@ def generate_launch_description():
     #启动绘图节点
 
     #启动地图服务器节点
+    pnc_map_server = Node(
+        package="planning",
+        executable="pnc_map_server",
+        name="pnc_map_server",
+    )
 
     #启动全局服务器节点
+    global_path_server = Node(
+        package="planning",
+        executable="global_path_server",
+        name="global_path_server",
+    )
+
 
     #启动规划节点
     planning_process = Node(
         package="planning",
-        executable="planning_node",
-        name="planning_node",
+        executable="planning_process",
+        name="planning_process",
     )
     #节点分组
     car_main = GroupAction(
@@ -73,6 +84,8 @@ def generate_launch_description():
         actions=[
             PushROSNamespace("planning"),
             planning_process,
+            pnc_map_server,
+            global_path_server,
         ]
 
     )

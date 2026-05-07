@@ -1,0 +1,13 @@
+[  5%] Built target config_reader
+[ 14%] Built target mathlibs
+[ 28%] Built target vehicle_info
+[ 31%] Built target pnc_map_creator
+[ 37%] Built target global_planner
+[ 45%] Built target reference_line
+[ 51%] Built target car_move_cmd
+[ 57%] Built target decision_center
+[ 62%] Built target obs_move_cmd
+[ 68%] [32mBuilding CXX object src/global_planner/CMakeFiles/global_path_server.dir/global_path_server.cpp.o[0m
+[ 71%] Built target pnc_map_server
+[ 88%] Built target local_planner
+[ 97%] Built target planning_process

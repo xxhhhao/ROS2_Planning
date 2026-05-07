@@ -1,0 +1,25 @@
+[1.282s] Invoking command in '/home/lh/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/python3.12/site-packages:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j16 -l16
+[1.947s] [  5%] Built target config_reader
+[1.973s] [ 14%] Built target mathlibs
+[2.238s] [ 20%] Built target global_planner
+[2.297s] [ 28%] Built target vehicle_info
+[2.341s] [ 37%] Built target reference_line
+[2.420s] [ 40%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_straight/pnc_map_creator_straight.cpp.o[0m
+[2.534s] [ 45%] Built target global_path_server
+[2.563s] [ 51%] Built target car_move_cmd
+[2.581s] [ 57%] Built target decision_center
+[2.583s] [ 62%] Built target obs_move_cmd
+[2.911s] [ 80%] Built target local_planner
+[3.204s] [ 88%] Built target planning_process
+[21.504s] [ 91%] [32m[1mLinking CXX shared library libpnc_map_creator.so[0m
+[23.068s] [ 94%] Built target pnc_map_creator
+[23.424s] [ 97%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o[0m
+[38.229s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:[m[K In member function ‘[01m[Kvoid Planning::PNCMapServer::[01;32m[Kresponse_pnc_map_callback[m[K(std::shared_ptr<base_msgs::srv::PNCMapService_Request_<std::allocator<void> > >, std::shared_ptr<base_msgs::srv::PNCMapService_Response_<std::allocator<void> > >)[m[K’:
+[38.230s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:25:43:[m[K [01;31m[Kerror: [m[K‘[01m[KSTARIGHT[m[K’ is not a member of ‘[01m[KPlanning::PNCMapType[m[K’; did you mean ‘[01m[KSTRAIGHT[m[K’?
+[38.231s]    25 |         case static_cast<int>(PNCMapType::[01;31m[KSTARIGHT[m[K):
+[38.231s]       |                                           [01;31m[K^~~~~~~~[m[K
+[38.232s]       |                                           [32m[KSTRAIGHT[m[K
+[45.116s] gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/build.make:76：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o] 错误 1
+[45.119s] gmake[1]: *** [CMakeFiles/Makefile2:580：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/all] 错误 2
+[45.121s] gmake: *** [Makefile:146：all] 错误 2
+[45.140s] Invoked command in '/home/lh/planning_with_ROS2_course/build/planning' returned '2': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/python3.12/site-packages:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j16 -l16

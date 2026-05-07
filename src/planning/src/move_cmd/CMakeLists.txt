@@ -38,5 +38,5 @@ endforeach()
 #安装动态库、节点相关目录
 install(TARGETS
   ${MOVE_TARGETS}
-  DESTINATION lib/{PLANNING_PACKAGE_NAME})
+  DESTINATION lib/${PLANNING_PACKAGE_NAME})
 

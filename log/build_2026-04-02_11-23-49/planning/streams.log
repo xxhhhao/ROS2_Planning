@@ -1,0 +1,138 @@
+[2.013s] Invoking command in '/home/lh/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/python3.12/site-packages:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j16 -l16
+[2.442s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[5.146s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[5.598s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[5.756s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[5.966s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.253s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.125s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[7.170s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[8.042s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.755s] -- Found tf2: 0.36.19 (/opt/ros/jazzy/share/tf2/cmake)
+[9.070s] -- Found tf2_ros: 0.36.19 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[10.022s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[10.194s] -- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[10.518s] -- Found base_msgs: 0.0.0 (/home/lh/planning_with_ROS2_course/install/base_msgs/share/base_msgs/cmake)
+[10.941s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[11.783s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[11.788s] -- Configured cppcheck include dirs: /home/lh/planning_with_ROS2_course/src/planning/src/common/config_reader;/home/lh/planning_with_ROS2_course/src/planning/src/common/math;/home/lh/planning_with_ROS2_course/src/planning/src/decision_center;/home/lh/planning_with_ROS2_course/src/planning/src/global_planner;/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_normal;/home/lh/planning_with_ROS2_course/src/planning/src/local_planner;/home/lh/planning_with_ROS2_course/src/planning/src/local_planner/local_path;/home/lh/planning_with_ROS2_course/src/planning/src/local_planner/local_speeds;/home/lh/planning_with_ROS2_course/src/planning/src/move_cmd;/home/lh/planning_with_ROS2_course/src/planning/src/planning_process;/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator;/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_crossroad;/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_roundabout;/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_straight;/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_sturn;/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_tjunction;/home/lh/planning_with_ROS2_course/src/planning/src/reference_line;/home/lh/planning_with_ROS2_course/src/planning/src/vehicle_info;/home/lh/planning_with_ROS2_course/src/planning/src/vehicle_info/main_car;/home/lh/planning_with_ROS2_course/src/planning/src/vehicle_info/obs_car;/home/lh/planning_with_ROS2_course/src/planning/src/vehicle_info/obs_ebike;/home/lh/planning_with_ROS2_course/src/planning/src/vehicle_info/obs_people
+[11.789s] -- Configured cppcheck exclude dirs and/or files: 
+[11.807s] -- Added test 'flake8' to check Python code syntax and style conventions
+[11.808s] -- Configured 'flake8' exclude dirs and/or files: 
+[11.842s] -- Added test 'lint_cmake' to check CMake code style
+[11.864s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[11.986s] -- Added test 'uncrustify' to check C / C++ code style
+[11.987s] -- Configured uncrustify additional arguments: 
+[11.998s] -- Added test 'xmllint' to check XML markup files
+[12.023s] -- Configuring done (9.7s)
+[13.118s] -- Generating done (0.9s)
+[13.309s] -- Build files have been written to: /home/lh/planning_with_ROS2_course/build/planning
+[13.889s] [  5%] Built target config_reader
+[13.975s] [  8%] [32mBuilding CXX object src/common/CMakeFiles/mathlibs.dir/math/curve.cpp.o[0m
+[14.001s] [ 11%] [32mBuilding CXX object src/common/CMakeFiles/mathlibs.dir/math/polynomial_curve.cpp.o[0m
+[14.338s] [ 14%] [32mBuilding CXX object src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o[0m
+[14.351s] [ 17%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_sturn/pnc_map_creator_sturn.cpp.o[0m
+[14.364s] [ 20%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_straight/pnc_map_creator_straight.cpp.o[0m
+[65.603s] [ 22%] [32m[1mLinking CXX shared library libglobal_planner.so[0m
+[65.606s] [ 25%] [32m[1mLinking CXX shared library libpnc_map_creator.so[0m
+[68.061s] [ 28%] [32m[1mLinking CXX shared library libmathlibs.so[0m
+[68.066s] [ 28%] Built target pnc_map_creator
+[68.122s] [ 28%] Built target global_planner
+[70.475s] [ 28%] Built target mathlibs
+[70.954s] [ 31%] [32mBuilding CXX object src/global_planner/CMakeFiles/global_path_server.dir/global_path_server.cpp.o[0m
+[93.119s] [ 34%] [32m[1mLinking CXX executable global_path_server[0m
+[94.486s] [ 34%] Built target global_path_server
+[94.959s] [ 37%] [32mBuilding CXX object src/reference_line/CMakeFiles/reference_line.dir/reference_line_creator.cpp.o[0m
+[116.273s] [ 40%] [32mBuilding CXX object src/reference_line/CMakeFiles/reference_line.dir/reference_line_smoother.cpp.o[0m
+[143.310s] [ 42%] [32m[1mLinking CXX shared library libreference_line.so[0m
+[144.553s] [ 42%] Built target reference_line
+[144.927s] [ 45%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o[0m
+[144.994s] [ 48%] [32mBuilding CXX object src/vehicle_info/CMakeFiles/vehicle_info.dir/main_car/main_car_info.cpp.o[0m
+[144.996s] [ 51%] [32mBuilding CXX object src/vehicle_info/CMakeFiles/vehicle_info.dir/obs_car/obs_car_info.cpp.o[0m
+[165.869s] [ 54%] [32m[1mLinking CXX shared library libvehicle_info.so[0m
+[167.074s] [ 54%] Built target vehicle_info
+[167.497s] [ 57%] [32m[1mLinking CXX executable pnc_map_server[0m
+[168.840s] [ 57%] Built target pnc_map_server
+[169.211s] [ 60%] [32mBuilding CXX object src/move_cmd/CMakeFiles/obs_move_cmd.dir/obs_move_cmd.cpp.o[0m
+[191.025s] [ 62%] [32m[1mLinking CXX executable obs_move_cmd[0m
+[192.594s] [ 62%] Built target obs_move_cmd
+[192.976s] [ 65%] [32mBuilding CXX object src/decision_center/CMakeFiles/decision_center.dir/decision_center.cpp.o[0m
+[192.978s] [ 68%] [32mBuilding CXX object src/move_cmd/CMakeFiles/car_move_cmd.dir/car_move_cmd.cpp.o[0m
+[213.166s] [ 71%] [32m[1mLinking CXX shared library libdecision_center.so[0m
+[214.331s] [ 71%] Built target decision_center
+[214.964s] [ 74%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_trajectory_combiner.cpp.o[0m
+[214.982s] [ 77%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_path/local_path_planner.cpp.o[0m
+[214.989s] [ 80%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_speeds/local_speeds_planner.cpp.o[0m
+[214.994s] [ 85%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_path/local_path_smoother.cpp.o[0m
+[214.995s] [ 85%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_speeds/local_speeds_smoother.cpp.o[0m
+[215.092s] [ 88%] [32m[1mLinking CXX executable car_move_cmd[0m
+[216.977s] [ 88%] Built target car_move_cmd
+[241.456s] [ 91%] [32m[1mLinking CXX shared library liblocal_planner.so[0m
+[242.950s] [ 91%] Built target local_planner
+[243.488s] [ 94%] [32mBuilding CXX object src/planning_process/CMakeFiles/planning_process.dir/planning_process_main.cpp.o[0m
+[267.885s] [ 97%] [32mBuilding CXX object src/planning_process/CMakeFiles/planning_process.dir/planning_process.cpp.o[0m
+[292.804s] [100%] [32m[1mLinking CXX executable planning_process[0m
+[294.330s] [100%] Built target planning_process
+[294.453s] Invoked command in '/home/lh/planning_with_ROS2_course/build/planning' returned '0': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/python3.12/site-packages:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j16 -l16
+[294.462s] Invoking command in '/home/lh/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/python3.12/site-packages:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/lh/planning_with_ROS2_course/build/planning
+[294.550s] -- Install configuration: ""
+[294.564s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/lib/libconfig_reader.so
+[294.575s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libmathlibs.so
+[294.587s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libmathlibs.so" to ""
+[294.595s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libdecision_center.so
+[294.604s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libdecision_center.so" to ""
+[294.614s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libglobal_planner.so
+[294.624s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libglobal_planner.so" to ""
+[294.633s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/planning/global_path_server
+[294.645s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/planning/global_path_server" to ""
+[294.655s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/liblocal_planner.so
+[294.665s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/liblocal_planner.so" to ""
+[294.681s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/{PLANNING_PACKAGE_NAME}/car_move_cmd
+[294.691s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/{PLANNING_PACKAGE_NAME}/car_move_cmd" to ""
+[294.707s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/{PLANNING_PACKAGE_NAME}/obs_move_cmd
+[294.722s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/{PLANNING_PACKAGE_NAME}/obs_move_cmd" to ""
+[294.731s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/planning/planning_process
+[294.743s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/planning/planning_process" to ""
+[294.752s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libpnc_map_creator.so
+[294.763s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libpnc_map_creator.so" to ""
+[294.772s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/planning/libpnc_map_creator.so
+[294.782s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/planning/libpnc_map_creator.so" to ""
+[294.791s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libreference_line.so
+[294.805s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libreference_line.so" to ""
+[294.819s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/lib/libvehicle_info.so
+[294.830s] -- Set non-toolchain portion of runtime path of "/home/lh/planning_with_ROS2_course/install/planning/lib/libvehicle_info.so" to ""
+[294.832s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/config
+[294.835s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/config/planning_static_obs_config.yaml
+[294.838s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/launch
+[294.838s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/launch/planning_launch.py
+[294.842s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf
+[294.847s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car
+[294.849s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_wheels.xacro
+[294.853s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_base.xacro
+[294.855s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_camera.xacro
+[294.856s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car_radar.xacro
+[294.857s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/main_car/car.xacro
+[294.858s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_person
+[294.859s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_person/obs_person.xacro
+[294.861s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_car
+[294.862s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_car/obs_car.xacro
+[294.864s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_ebike
+[294.867s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/urdf/obs_ebike/obs_ebike.xacro
+[294.869s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/rviz
+[294.871s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/rviz/planning.rviz
+[294.875s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/package_run_dependencies/planning
+[294.877s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/parent_prefix_path/planning
+[294.881s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/ament_prefix_path.sh
+[294.882s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/ament_prefix_path.dsv
+[294.883s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/path.sh
+[294.888s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/environment/path.dsv
+[294.892s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.bash
+[294.893s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.sh
+[294.895s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.zsh
+[294.896s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/local_setup.dsv
+[294.899s] -- Installing: /home/lh/planning_with_ROS2_course/install/planning/share/planning/package.dsv
+[294.901s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/ament_index/resource_index/packages/planning
+[294.903s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/cmake/planningConfig.cmake
+[294.904s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/cmake/planningConfig-version.cmake
+[294.905s] -- Up-to-date: /home/lh/planning_with_ROS2_course/install/planning/share/planning/package.xml
+[294.906s] Invoked command in '/home/lh/planning_with_ROS2_course/build/planning' returned '0': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/python3.12/site-packages:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/lh/planning_with_ROS2_course/build/planning

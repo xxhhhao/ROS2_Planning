@@ -281,7 +281,7 @@ SITE:STRING=lh-VMware-Virtual-Platform
 TinyXML2_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/tinyxml2
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/jazzy/lib/libvisualization_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for action_msgs.
 action_msgs_DIR:PATH=/opt/ros/jazzy/share/action_msgs/cmake

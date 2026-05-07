@@ -45,5 +45,5 @@ install(TARGETS
   LIBRARY DESTINATION lib)
 
 install(TARGETS
-  pnc_map_creator
+  pnc_map_server
   DESTINATION lib/${PLANNING_PACKAGE_NAME})

@@ -54,7 +54,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libreference_line.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libreference_line.so"
-         OLD_RPATH "/opt/ros/jazzy/lib:/home/lh/planning_with_ROS2_course/build/planning/src/common:/usr/local/lib:"
+         OLD_RPATH "/home/lh/planning_with_ROS2_course/build/planning/src/common:/usr/local/lib:/opt/ros/jazzy/lib:/home/lh/planning_with_ROS2_course/install/base_msgs/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libreference_line.so")

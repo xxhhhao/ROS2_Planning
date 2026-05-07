@@ -54,7 +54,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libpnc_map_creator.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libpnc_map_creator.so"
-         OLD_RPATH "/opt/ros/jazzy/lib:/home/lh/planning_with_ROS2_course/build/planning/src/common:"
+         OLD_RPATH "/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/build/planning/src/common:/opt/ros/jazzy/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libpnc_map_creator.so")
@@ -66,29 +66,26 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/libpnc_map_creator.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/libpnc_map_creator.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/pnc_map_server" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/pnc_map_server")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/libpnc_map_creator.so"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/pnc_map_server"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/planning" TYPE SHARED_LIBRARY FILES "/home/lh/planning_with_ROS2_course/build/planning/src/pnc_map_creator/libpnc_map_creator.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/libpnc_map_creator.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/libpnc_map_creator.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/planning" TYPE EXECUTABLE FILES "/home/lh/planning_with_ROS2_course/build/planning/src/pnc_map_creator/pnc_map_server")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/pnc_map_server" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/pnc_map_server")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/libpnc_map_creator.so"
-         OLD_RPATH "/opt/ros/jazzy/lib:/home/lh/planning_with_ROS2_course/build/planning/src/common:"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/pnc_map_server"
+         OLD_RPATH "/home/lh/planning_with_ROS2_course/build/planning/src/pnc_map_creator:/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/opt/ros/jazzy/lib:/home/lh/planning_with_ROS2_course/build/planning/src/common:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/libpnc_map_creator.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/pnc_map_server")
     endif()
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/lh/planning_with_ROS2_course/build/planning/src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/lh/planning_with_ROS2_course/build/planning/src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 

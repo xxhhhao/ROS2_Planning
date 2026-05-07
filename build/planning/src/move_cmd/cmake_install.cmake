@@ -43,21 +43,21 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/{PLANNING_PACKAGE_NAME}/car_move_cmd" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/{PLANNING_PACKAGE_NAME}/car_move_cmd")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/car_move_cmd" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/car_move_cmd")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/{PLANNING_PACKAGE_NAME}/car_move_cmd"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/car_move_cmd"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/{PLANNING_PACKAGE_NAME}" TYPE EXECUTABLE FILES "/home/lh/planning_with_ROS2_course/build/planning/src/move_cmd/car_move_cmd")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/{PLANNING_PACKAGE_NAME}/car_move_cmd" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/{PLANNING_PACKAGE_NAME}/car_move_cmd")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/planning" TYPE EXECUTABLE FILES "/home/lh/planning_with_ROS2_course/build/planning/src/move_cmd/car_move_cmd")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/car_move_cmd" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/car_move_cmd")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/{PLANNING_PACKAGE_NAME}/car_move_cmd"
-         OLD_RPATH "/opt/ros/jazzy/lib:/home/lh/planning_with_ROS2_course/build/planning/src/vehicle_info:/home/lh/planning_with_ROS2_course/build/planning/src/common:"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/car_move_cmd"
+         OLD_RPATH "/opt/ros/jazzy/lib:/home/lh/planning_with_ROS2_course/build/planning/src/vehicle_info:/home/lh/planning_with_ROS2_course/build/planning/src/common:/home/lh/planning_with_ROS2_course/install/base_msgs/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/{PLANNING_PACKAGE_NAME}/car_move_cmd")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/car_move_cmd")
     endif()
   endif()
 endif()
@@ -67,21 +67,21 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/{PLANNING_PACKAGE_NAME}/obs_move_cmd" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/{PLANNING_PACKAGE_NAME}/obs_move_cmd")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/obs_move_cmd" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/obs_move_cmd")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/{PLANNING_PACKAGE_NAME}/obs_move_cmd"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/obs_move_cmd"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/{PLANNING_PACKAGE_NAME}" TYPE EXECUTABLE FILES "/home/lh/planning_with_ROS2_course/build/planning/src/move_cmd/obs_move_cmd")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/{PLANNING_PACKAGE_NAME}/obs_move_cmd" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/{PLANNING_PACKAGE_NAME}/obs_move_cmd")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/planning" TYPE EXECUTABLE FILES "/home/lh/planning_with_ROS2_course/build/planning/src/move_cmd/obs_move_cmd")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/obs_move_cmd" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/obs_move_cmd")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/{PLANNING_PACKAGE_NAME}/obs_move_cmd"
-         OLD_RPATH "/opt/ros/jazzy/lib:/home/lh/planning_with_ROS2_course/build/planning/src/vehicle_info:/home/lh/planning_with_ROS2_course/build/planning/src/common:"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/obs_move_cmd"
+         OLD_RPATH "/opt/ros/jazzy/lib:/home/lh/planning_with_ROS2_course/build/planning/src/vehicle_info:/home/lh/planning_with_ROS2_course/build/planning/src/common:/home/lh/planning_with_ROS2_course/install/base_msgs/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/{PLANNING_PACKAGE_NAME}/obs_move_cmd")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/obs_move_cmd")
     endif()
   endif()
 endif()

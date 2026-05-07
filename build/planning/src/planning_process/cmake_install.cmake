@@ -54,7 +54,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/planning_process")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/planning_process"
-         OLD_RPATH "/opt/ros/jazzy/lib:/home/lh/planning_with_ROS2_course/build/planning/src/reference_line:/home/lh/planning_with_ROS2_course/build/planning/src/local_planner:/usr/local/lib:/home/lh/planning_with_ROS2_course/build/planning/src/decision_center:/home/lh/planning_with_ROS2_course/build/planning/src/vehicle_info:/home/lh/planning_with_ROS2_course/build/planning/src/common:"
+         OLD_RPATH "/opt/ros/jazzy/lib:/home/lh/planning_with_ROS2_course/build/planning/src/reference_line:/home/lh/planning_with_ROS2_course/build/planning/src/local_planner:/usr/local/lib:/home/lh/planning_with_ROS2_course/build/planning/src/decision_center:/home/lh/planning_with_ROS2_course/build/planning/src/vehicle_info:/home/lh/planning_with_ROS2_course/build/planning/src/common:/home/lh/planning_with_ROS2_course/install/base_msgs/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/planning_process")

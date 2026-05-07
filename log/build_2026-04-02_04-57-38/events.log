@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000734] (-) JobUnselected: {'identifier': 'base_msgs'}
+[0.001621] (-) JobUnselected: {'identifier': 'data_plot'}
+[0.001849] (-) JobUnselected: {'identifier': 'planning'}
+[0.005092] (-) EventReactorShutdown: {}

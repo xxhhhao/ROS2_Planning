@@ -1,0 +1,8 @@
+[01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_normal/global_planner_normal.cpp:[m[K In member function ‘[01m[Kvirtual nav_msgs::msg::Path Planning::GlobalPlannerNormal::[01;32m[Ksearch_global_path[m[K(const base_msgs::msg::PNCMap&)[m[K’:
+[01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_normal/global_planner_normal.cpp:9:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpnc_map[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    9 |     Path GlobalPlannerNormal::search_global_path([01;35m[Kconst PNCMap &pnc_map[m[K)
+      |                                                  [01;35m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:[m[K In member function ‘[01m[Kvisualization_msgs::msg::Marker Planning::GlobalPathServer::[01;32m[Kpath2marker[m[K(const nav_msgs::msg::Path&)[m[K’:
+[01m[K/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_path_server.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpath[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   55 |     Marker GlobalPathServer::path2marker([01;35m[Kconst Path &path[m[K)    //path转marker地图
+      |                                          [01;35m[K~~~~~~~~~~~~^~~~[m[K

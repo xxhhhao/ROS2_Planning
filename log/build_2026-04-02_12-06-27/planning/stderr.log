@@ -1,0 +1,24 @@
+In file included from [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:1[m[K:
+[01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.h:16:23:[m[K [01;31m[Kerror: [m[K‘[01m[KPNCMap[m[K’ was not declared in this scope; did you mean ‘[01m[Kbase_msgs::msg::PNCMap[m[K’?
+   16 |     rclcpp::Publisher<[01;31m[KPNCMap[m[K>::SharedPtr pub_pnc_map_;
+      |                       [01;31m[K^~~~~~[m[K
+      |                       [32m[Kbase_msgs::msg::PNCMap[m[K
+In file included from [01m[K/home/lh/planning_with_ROS2_course/install/base_msgs/include/base_msgs/base_msgs/srv/detail/pnc_map_service__struct.hpp:138[m[K,
+                 from [01m[K/home/lh/planning_with_ROS2_course/install/base_msgs/include/base_msgs/base_msgs/srv/pnc_map_service.hpp:7[m[K,
+                 from [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.h:5[m[K:
+[01m[K/home/lh/planning_with_ROS2_course/install/base_msgs/include/base_msgs/base_msgs/msg/detail/pnc_map__struct.hpp:203:7:[m[K [01;36m[Knote: [m[K‘[01m[Kbase_msgs::msg::PNCMap[m[K’ declared here
+  203 | using [01;36m[KPNCMap[m[K =
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.h:16:29:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   16 |     rclcpp::Publisher<PNCMap[01;31m[K>[m[K::SharedPtr pub_pnc_map_;
+      |                             [01;31m[K^[m[K
+[01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.h:16:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   16 |     rclcpp::Publisher<PNCMap>::[01;31m[KSharedPtr[m[K pub_pnc_map_;
+      |                                [01;31m[K^~~~~~~~~[m[K
+      |                                         [32m[K;[m[K
+[01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.h:16:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_pnc_map_[m[K’ does not name a type
+   16 |     rclcpp::Publisher<PNCMap>::SharedPtr [01;31m[Kpub_pnc_map_[m[K;
+      |                                          [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/build.make:76：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:580：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

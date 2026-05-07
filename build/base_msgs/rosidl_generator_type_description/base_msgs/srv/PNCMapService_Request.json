@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "base_msgs/srv/PNCMapService_Request",
+      "fields": [
+        {
+          "name": "map_type",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "base_msgs/srv/PNCMapService_Request",
+      "hash_string": "RIHS01_b7a0d2938cc5bd882a423310f9db794b14c1262d20aa20951bbed91e9206c97f"
+    }
+  ]
+}

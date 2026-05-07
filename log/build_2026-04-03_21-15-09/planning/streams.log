@@ -1,0 +1,73 @@
+[0.699s] Invoking command in '/home/lh/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/python3.12/site-packages:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j16 -l16
+[0.913s] [ 11%] Built target mathlibs
+[0.913s] [  8%] [32mBuilding CXX object src/common/CMakeFiles/config_reader.dir/config_reader/config_reader.cpp.o[0m
+[10.973s] [ 14%] [32m[1mLinking CXX shared library libconfig_reader.so[0m
+[11.630s] [ 14%] Built target config_reader
+[11.728s] [ 17%] [32mBuilding CXX object src/vehicle_info/CMakeFiles/vehicle_info.dir/main_car/main_car_info.cpp.o[0m
+[11.730s] [ 20%] [32mBuilding CXX object src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o[0m
+[11.731s] [ 22%] [32mBuilding CXX object src/vehicle_info/CMakeFiles/vehicle_info.dir/obs_car/obs_car_info.cpp.o[0m
+[11.744s] [ 25%] [32mBuilding CXX object src/reference_line/CMakeFiles/reference_line.dir/reference_line_creator.cpp.o[0m
+[11.749s] [ 28%] [32mBuilding CXX object src/reference_line/CMakeFiles/reference_line.dir/reference_line_smoother.cpp.o[0m
+[11.763s] [ 31%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_straight/pnc_map_creator_straight.cpp.o[0m
+[11.768s] [ 34%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_creator.dir/pnc_map_sturn/pnc_map_creator_sturn.cpp.o[0m
+[32.931s] [ 40%] [32m[1mLinking CXX shared library libvehicle_info.so[0m
+[32.932s] [ 40%] [32m[1mLinking CXX shared library libglobal_planner.so[0m
+[33.247s] [ 42%] [32m[1mLinking CXX shared library libpnc_map_creator.so[0m
+[33.561s] [ 42%] Built target vehicle_info
+[33.573s] [ 42%] Built target global_planner
+[33.669s] [ 42%] Built target pnc_map_creator
+[33.670s] [ 45%] [32mBuilding CXX object src/decision_center/CMakeFiles/decision_center.dir/decision_center.cpp.o[0m
+[33.678s] [ 48%] [32mBuilding CXX object src/move_cmd/CMakeFiles/car_move_cmd.dir/car_move_cmd.cpp.o[0m
+[33.692s] [ 51%] [32mBuilding CXX object src/move_cmd/CMakeFiles/obs_move_cmd.dir/obs_move_cmd.cpp.o[0m
+[33.694s] [ 54%] [32mBuilding CXX object src/global_planner/CMakeFiles/global_path_server.dir/global_path_server.cpp.o[0m
+[33.815s] [ 57%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o[0m
+[37.192s] [ 60%] [32m[1mLinking CXX shared library libreference_line.so[0m
+[37.598s] [ 60%] Built target reference_line
+[42.078s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:[m[K In member function ‘[01m[Kvoid Planning::PNCMapServer::[01;32m[Kresponse_pnc_map_callback[m[K(std::shared_ptr<base_msgs::srv::PNCMapService_Request_<std::allocator<void> > >, std::shared_ptr<base_msgs::srv::PNCMapService_Response_<std::allocator<void> > >)[m[K’:
+[42.079s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:23:97:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponce[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[42.079s]    23 |                                                  [01;35m[Kconst std::shared_ptr<PNCMapService::Response> responce[m[K)
+[42.079s]       |                                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[43.896s] [ 62%] [32m[1mLinking CXX shared library libdecision_center.so[0m
+[44.254s] [ 65%] [32m[1mLinking CXX executable global_path_server[0m
+[44.314s] [ 65%] Built target decision_center
+[44.331s] [ 68%] [32m[1mLinking CXX executable car_move_cmd[0m
+[44.442s] [ 71%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_path/local_path_smoother.cpp.o[0m
+[44.444s] [ 74%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_path/local_path_planner.cpp.o[0m
+[44.445s] [ 77%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_speeds/local_speeds_planner.cpp.o[0m
+[44.461s] [ 80%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_speeds/local_speeds_smoother.cpp.o[0m
+[44.494s] [ 82%] [32m[1mLinking CXX executable obs_move_cmd[0m
+[44.568s] In file included from [01m[K/usr/include/c++/13/bits/stl_tempbuf.h:61[m[K,
+[44.568s]                  from [01m[K/usr/include/c++/13/memory:66[m[K,
+[44.568s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K,
+[44.568s]                  from [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.h:4[m[K,
+[44.569s]                  from [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:1[m[K:
+[44.569s] /usr/include/c++/13/bits/stl_construct.h: In instantiation of ‘[01m[Kvoid std::[01;32m[K_Construct[m[K(_Tp*, _Args&& ...) [35m[K[with _Tp = Planning::PNCMapCreatorSTurn; _Args = {}][m[K[m[K’:
+[44.569s] [01m[K/usr/include/c++/13/bits/alloc_traits.h:661:19:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<void> >::[01;32m[Kconstruct[m[K(allocator_type&, _Up*, _Args&& ...) [35m[K[with _Up = Planning::PNCMapCreatorSTurn; _Args = {}; allocator_type = std::allocator<void>][m[K[m[K’
+[44.569s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:604:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::[01;32m[K_Sp_counted_ptr_inplace[m[K(_Alloc, _Args&& ...) [35m[K[with _Args = {}; _Tp = Planning::PNCMapCreatorSTurn; _Alloc = std::allocator<void>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K[m[K’
+[44.569s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:971:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::[01;32m[K__shared_count[m[K(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [35m[K[with _Tp = Planning::PNCMapCreatorSTurn; _Alloc = std::allocator<void>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K[m[K’
+[44.570s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1712:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::[01;32m[K__shared_ptr[m[K(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [35m[K[with _Alloc = std::allocator<void>; _Args = {}; _Tp = Planning::PNCMapCreatorSTurn; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K[m[K’
+[44.570s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:464:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::[01;32m[Kshared_ptr[m[K(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [35m[K[with _Alloc = std::allocator<void>; _Args = {}; _Tp = Planning::PNCMapCreatorSTurn][m[K[m[K’
+[44.570s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:1009:14:[m[K   required from ‘[01m[Kstd::shared_ptr<typename std::enable_if<(! std::is_array< <template-parameter-1-1> >::value), _Tp>::type> std::[01;32m[Kmake_shared[m[K(_Args&& ...) [35m[K[with _Tp = Planning::PNCMapCreatorSTurn; _Args = {}; typename enable_if<(! is_array< <template-parameter-1-1> >::value), _Tp>::type = Planning::PNCMapCreatorSTurn][m[K[m[K’
+[44.571s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:32:64:[m[K   required from here
+[44.571s] [01m[K/usr/include/c++/13/bits/stl_construct.h:119:7:[m[K [01;31m[Kerror: [m[Kinvalid new-expression of abstract class type ‘[01m[KPlanning::PNCMapCreatorSTurn[m[K’
+[44.572s]   119 |       [01;31m[K::new((void*)__p) _Tp(std::forward<_Args>(__args)...)[m[K;
+[44.572s]       |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[44.572s] In file included from [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.h:7[m[K:
+[44.572s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_sturn/pnc_map_creator_sturn.h:8:7:[m[K [01;36m[Knote: [m[K  because the following virtual functions are pure within ‘[01m[KPlanning::PNCMapCreatorSTurn[m[K’:
+[44.573s]     8 | class [01;36m[KPNCMapCreatorSTurn[m[K : public PNCMapCreatorBase //S弯地图
+[44.573s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[44.573s] In file included from [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_straight/pnc_map_creator_straight.h:4[m[K,
+[44.573s]                  from [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.h:6[m[K:
+[44.573s] [01m[K/home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_creator_base.h:25:24:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual base_msgs::msg::PNCMap Planning::PNCMapCreatorBase::[01;32m[Kcreat_pnc_map[m[K()[m[K’
+[44.573s]    25 |         virtual PNCMap [01;36m[Kcreat_pnc_map[m[K()=0;
+[44.574s]       |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[44.906s] [ 82%] Built target global_path_server
+[44.923s] [ 82%] Built target car_move_cmd
+[44.998s] [ 82%] Built target obs_move_cmd
+[47.375s] gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/build.make:76：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o] 错误 1
+[47.376s] gmake[1]: *** [CMakeFiles/Makefile2:580：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/all] 错误 2
+[47.376s] gmake[1]: *** 正在等待未完成的任务....
+[55.023s] [ 85%] [32m[1mLinking CXX shared library liblocal_planner.so[0m
+[55.351s] [ 88%] Built target local_planner
+[55.355s] gmake: *** [Makefile:146：all] 错误 2
+[55.362s] Invoked command in '/home/lh/planning_with_ROS2_course/build/planning' returned '2': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/python3.12/site-packages:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j16 -l16

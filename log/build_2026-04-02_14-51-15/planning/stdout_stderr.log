@@ -1,0 +1,20 @@
+[  5%] Built target config_reader
+[ 14%] Built target mathlibs
+[ 20%] Built target global_planner
+[ 28%] Built target pnc_map_creator
+[ 37%] Built target vehicle_info
+[ 45%] Built target reference_line
+[ 51%] Built target global_path_server
+[ 57%] Built target obs_move_cmd
+[ 62%] Built target car_move_cmd
+[ 68%] Built target decision_center
+[ 71%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o[0m
+[ 88%] Built target local_planner
+[ 97%] Built target planning_process
+[100%] [32m[1mLinking CXX executable pnc_map_server[0m
+/usr/bin/ld: CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o: in function `Planning::PNCMapServer::PNCMapServer()':
+pnc_map_server.cpp:(.text+0x5bf): undefined reference to `Planning::PNCMapServer::response_pnc_map_callback(std::shared_ptr<base_msgs::srv::PNCMapService_Request_<std::allocator<void> > >, std::shared_ptr<base_msgs::srv::PNCMapService_Response_<std::allocator<void> > >)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/build.make:211：src/pnc_map_creator/pnc_map_server] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:580：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

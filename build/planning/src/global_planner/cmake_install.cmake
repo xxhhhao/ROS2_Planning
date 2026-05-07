@@ -54,7 +54,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libglobal_planner.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libglobal_planner.so"
-         OLD_RPATH "/opt/ros/jazzy/lib:/home/lh/planning_with_ROS2_course/build/planning/src/common:"
+         OLD_RPATH "/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/build/planning/src/common:/opt/ros/jazzy/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libglobal_planner.so")
@@ -77,7 +77,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/global_path_server")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/global_path_server"
-         OLD_RPATH "/home/lh/planning_with_ROS2_course/build/planning/src/global_planner:/opt/ros/jazzy/lib:/home/lh/planning_with_ROS2_course/build/planning/src/common:"
+         OLD_RPATH "/home/lh/planning_with_ROS2_course/build/planning/src/global_planner:/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/opt/ros/jazzy/lib:/home/lh/planning_with_ROS2_course/build/planning/src/common:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/global_path_server")

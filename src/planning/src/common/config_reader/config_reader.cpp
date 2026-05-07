@@ -2,7 +2,7 @@
 
 namespace Planning
 {
-    ConfigerReader::ConfigerReader()
+    ConfigReader::ConfigReader()
     {
         //获取workspace/install/planning/shared/planing等的工作目录
         std::string planing_share_directory = ament_index_cpp::get_package_share_directory("planning");
@@ -11,7 +11,7 @@ namespace Planning
         planning_config = YAML::LoadFile(planing_share_directory + "/config/planning_static_obs_config.yaml");
     }
 
-    void ConfigerReader::read_vehicle_config(VehicleStruct &vehicle, const std::string &name)
+    void ConfigReader::read_vehicle_config(VehicleStruct &vehicle, const std::string &name)
     {
         vehicle.id_ = planning_config["vehicle"][name]["id"].as<int>();
         vehicle.frame_ = planning_config["vehicle"][name]["frame"].as<std::string>();
@@ -28,7 +28,7 @@ namespace Planning
         }
     }
 
-    void ConfigerReader::read_vehicles_config()
+    void ConfigReader::read_vehicles_config()
     {
         try
         {
@@ -44,23 +44,23 @@ namespace Planning
         }
         
     }
-    void ConfigerReader::read_pnc_map_config()
+    void ConfigReader::read_pnc_map_config()
     {
         try
         {
             pnc_map_.frame_ = planning_config["pnc_map"]["frame"].as<std::string>();
             pnc_map_.type_ = planning_config["pnc_map"]["type"].as<int>();
-            pnc_map_.road_length = planning_config["pnc_map"]["road_length"].as<double>();
-            pnc_map_.road_half_width = planning_config["pnc_map"]["road_half_width"].as<double>();
+            pnc_map_.road_length_ = planning_config["pnc_map"]["road_length"].as<double>();
+            pnc_map_.road_half_width_ = planning_config["pnc_map"]["road_half_width"].as<double>();
             pnc_map_.segment_len_ = planning_config["pnc_map"]["segment_len"].as<double>();
-            pnc_map_.speed_limit = planning_config["pnc_map"]["speed_limit"].as<double>();
+            pnc_map_.speed_limit_ = planning_config["pnc_map"]["speed_limit"].as<double>();
         }
         catch(const YAML::Exception &e)
         {
             RCLCPP_ERROR(rclcpp::get_logger("config"),"Failed to load pnc_map config: %s",e.what());
         }      
     }
-    void ConfigerReader::read_global_path_config()
+    void ConfigReader::read_global_path_config()
     {
         try
         {
@@ -72,7 +72,7 @@ namespace Planning
         }
         
     }
-    void ConfigerReader::read_reference_line_config()
+    void ConfigReader::read_reference_line_config()
     {
 
         try
@@ -88,7 +88,7 @@ namespace Planning
         }
         
     }
-    void ConfigerReader::read_local_path_config()
+    void ConfigReader::read_local_path_config()
     {
         try
         {
@@ -103,7 +103,7 @@ namespace Planning
         }
         
     }
-    void ConfigerReader::read_local_speeds_config()
+    void ConfigReader::read_local_speeds_config()
     {
         try
         {
@@ -116,7 +116,7 @@ namespace Planning
         }
         
     }
-    void ConfigerReader::read_decision_config()
+    void ConfigReader::read_decision_config()
     {
         try
         {
@@ -132,7 +132,7 @@ namespace Planning
             RCLCPP_ERROR(rclcpp::get_logger("config"),"Failed to load decision config: %s",e.what());
         }
     }
-    void ConfigerReader::read_planning_process_config()
+    void ConfigReader::read_planning_process_config()
     {
         try
         {
@@ -146,7 +146,7 @@ namespace Planning
             RCLCPP_ERROR(rclcpp::get_logger("config"),"Failed to load process config: %s",e.what());
         }
     }
-    void ConfigerReader::read_move_cmd_config()
+    void ConfigReader::read_move_cmd_config()
     {
         try
         {

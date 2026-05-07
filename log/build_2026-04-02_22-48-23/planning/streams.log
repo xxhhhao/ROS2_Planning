@@ -1,0 +1,75 @@
+[0.539s] Invoking command in '/home/lh/planning_with_ROS2_course/build/planning': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/python3.12/site-packages:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j16 -l16
+[0.704s] [  5%] Built target config_reader
+[0.712s] [ 14%] Built target mathlibs
+[0.785s] [ 20%] Built target global_planner
+[0.793s] [ 37%] Built target reference_line
+[0.794s] [ 37%] Built target vehicle_info
+[0.817s] [ 45%] Built target pnc_map_creator
+[0.868s] [ 51%] Built target global_path_server
+[0.873s] [ 60%] Built target obs_move_cmd
+[0.873s] [ 62%] Built target decision_center
+[0.879s] [ 68%] Built target car_move_cmd
+[0.914s] [ 71%] Building CXX object src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o
+[0.966s] [ 88%] Built target local_planner
+[1.058s] [ 97%] Built target planning_process
+[7.661s] /home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp: In member function ‘void Planning::PNCMapServer::response_pnc_map_callback(std::shared_ptr<base_msgs::srv::PNCMapService_Request_<std::allocator<void> > >, std::shared_ptr<base_msgs::srv::PNCMapService_Response_<std::allocator<void> > >)’:
+[7.661s] /home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:29:65: error: no match for ‘operator=’ (operand types are ‘std::shared_ptr<Planning::PNCMapCreatorBase>’ and ‘std::shared_ptr<Planning::PNCMapCreatorSTurn>’)
+[7.661s]    29 |             map_creator_ = std::make_shared<PNCMapCreatorSTurn>();
+[7.661s]       |                                                                 ^
+[7.661s] In file included from /usr/include/c++/13/memory:80,
+[7.662s]                  from /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169,
+[7.662s]                  from /home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.h:4,
+[7.662s]                  from /home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:1:
+[7.662s] /usr/include/c++/13/bits/shared_ptr.h:418:9: note: candidate: ‘template<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Tp = Planning::PNCMapCreatorBase]’
+[7.662s]   418 |         operator=(const shared_ptr<_Yp>& __r) noexcept
+[7.662s]       |         ^~~~~~~~
+[7.662s] /usr/include/c++/13/bits/shared_ptr.h:418:9: note:   template argument deduction/substitution failed:
+[7.663s] /usr/include/c++/13/bits/shared_ptr.h: In substitution of ‘template<class _Tp> template<class _Arg> using std::shared_ptr<_Tp>::_Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = const std::shared_ptr<Planning::PNCMapCreatorSTurn>&; _Tp = Planning::PNCMapCreatorBase]’:
+[7.663s] /usr/include/c++/13/bits/shared_ptr.h:418:2:   required by substitution of ‘template<class _Yp> std::shared_ptr<Planning::PNCMapCreatorBase>::_Assignable<const std::shared_ptr<_Tp>&> std::shared_ptr<Planning::PNCMapCreatorBase>::operator=(const std::shared_ptr<_Tp>&) [with _Yp = Planning::PNCMapCreatorSTurn]’
+[7.663s] /home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:29:65:   required from here
+[7.663s] /usr/include/c++/13/bits/shared_ptr.h:183:15: error: no type named ‘type’ in ‘struct std::enable_if<false, std::shared_ptr<Planning::PNCMapCreatorBase>&>’
+[7.663s]   183 |         using _Assignable = typename enable_if<
+[7.663s]       |               ^~~~~~~~~~~
+[7.664s] /usr/include/c++/13/bits/shared_ptr.h:429:9: note: candidate: ‘template<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Tp = Planning::PNCMapCreatorBase]’
+[7.664s]   429 |         operator=(auto_ptr<_Yp>&& __r)
+[7.664s]       |         ^~~~~~~~
+[7.664s] /usr/include/c++/13/bits/shared_ptr.h:429:9: note:   template argument deduction/substitution failed:
+[7.664s] /home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:29:65: note:   ‘std::shared_ptr<Planning::PNCMapCreatorSTurn>’ is not derived from ‘std::auto_ptr<_Up>’
+[7.664s]    29 |             map_creator_ = std::make_shared<PNCMapCreatorSTurn>();
+[7.665s]       |                                                                 ^
+[7.665s] /usr/include/c++/13/bits/shared_ptr.h:446:9: note: candidate: ‘template<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Tp = Planning::PNCMapCreatorBase]’
+[7.665s]   446 |         operator=(shared_ptr<_Yp>&& __r) noexcept
+[7.665s]       |         ^~~~~~~~
+[7.665s] /usr/include/c++/13/bits/shared_ptr.h:446:9: note:   template argument deduction/substitution failed:
+[7.666s] /usr/include/c++/13/bits/shared_ptr.h: In substitution of ‘template<class _Tp> template<class _Arg> using std::shared_ptr<_Tp>::_Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = std::shared_ptr<Planning::PNCMapCreatorSTurn>; _Tp = Planning::PNCMapCreatorBase]’:
+[7.666s] /usr/include/c++/13/bits/shared_ptr.h:446:2:   required by substitution of ‘template<class _Yp> std::shared_ptr<Planning::PNCMapCreatorBase>::_Assignable<std::shared_ptr<_Tp> > std::shared_ptr<Planning::PNCMapCreatorBase>::operator=(std::shared_ptr<_Tp>&&) [with _Yp = Planning::PNCMapCreatorSTurn]’
+[7.666s] /home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:29:65:   required from here
+[7.666s] /usr/include/c++/13/bits/shared_ptr.h:183:15: error: no type named ‘type’ in ‘struct std::enable_if<false, std::shared_ptr<Planning::PNCMapCreatorBase>&>’
+[7.666s]   183 |         using _Assignable = typename enable_if<
+[7.666s]       |               ^~~~~~~~~~~
+[7.667s] /usr/include/c++/13/bits/shared_ptr.h:454:9: note: candidate: ‘template<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Del = _Yp; _Tp = Planning::PNCMapCreatorBase]’
+[7.667s]   454 |         operator=(unique_ptr<_Yp, _Del>&& __r)
+[7.667s]       |         ^~~~~~~~
+[7.667s] /usr/include/c++/13/bits/shared_ptr.h:454:9: note:   template argument deduction/substitution failed:
+[7.667s] /home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:29:65: note:   ‘std::shared_ptr<Planning::PNCMapCreatorSTurn>’ is not derived from ‘std::unique_ptr<_Tp, _Dp>’
+[7.668s]    29 |             map_creator_ = std::make_shared<PNCMapCreatorSTurn>();
+[7.668s]       |                                                                 ^
+[7.668s] /usr/include/c++/13/bits/shared_ptr.h:414:19: note: candidate: ‘std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = Planning::PNCMapCreatorBase]’
+[7.668s]   414 |       shared_ptr& operator=(const shared_ptr&) noexcept = default;
+[7.668s]       |                   ^~~~~~~~
+[7.668s] /usr/include/c++/13/bits/shared_ptr.h:414:29: note:   no known conversion for argument 1 from ‘std::shared_ptr<Planning::PNCMapCreatorSTurn>’ to ‘const std::shared_ptr<Planning::PNCMapCreatorBase>&’
+[7.668s]   414 |       shared_ptr& operator=(const shared_ptr&) noexcept = default;
+[7.669s]       |                             ^~~~~~~~~~~~~~~~~
+[7.669s] /usr/include/c++/13/bits/shared_ptr.h:438:7: note: candidate: ‘std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = Planning::PNCMapCreatorBase]’
+[7.669s]   438 |       operator=(shared_ptr&& __r) noexcept
+[7.670s]       |       ^~~~~~~~
+[7.670s] /usr/include/c++/13/bits/shared_ptr.h:438:30: note:   no known conversion for argument 1 from ‘std::shared_ptr<Planning::PNCMapCreatorSTurn>’ to ‘std::shared_ptr<Planning::PNCMapCreatorBase>&&’
+[7.670s]   438 |       operator=(shared_ptr&& __r) noexcept
+[7.670s]       |                 ~~~~~~~~~~~~~^~~
+[7.670s] /home/lh/planning_with_ROS2_course/src/planning/src/pnc_map_creator/pnc_map_server.cpp:21:97: warning: unused parameter ‘responce’ [-Wunused-parameter]
+[7.670s]    21 |                                                  const std::shared_ptr<PNCMapService::Response> responce)
+[7.671s]       |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+[8.302s] gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/build.make:76: src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o] 中断
+[8.303s] gmake[1]: *** [CMakeFiles/Makefile2:580: src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/all] 中断
+[8.304s] gmake: *** [Makefile:146: all] 中断
+[8.381s] Invoked command in '/home/lh/planning_with_ROS2_course/build/planning' returned '-2': CMAKE_PREFIX_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs:/home/lh/planning_with_ROS2_course/install/planning:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/home/lh/planning_with_ROS2_course/install/planning/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/lh/planning_with_ROS2_course/install/base_msgs/lib/python3.12/site-packages:/home/lh/planning_with_ROS2_course/install/data_plot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/planning -- -j16 -l16
