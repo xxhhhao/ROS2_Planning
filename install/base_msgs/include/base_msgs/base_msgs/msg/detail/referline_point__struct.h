@@ -3,9 +3,6 @@
 // with input from base_msgs:msg/ReferlinePoint.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "base_msgs/msg/referline_point.h"
-
-
 #ifndef BASE_MSGS__MSG__DETAIL__REFERLINE_POINT__STRUCT_H_
 #define BASE_MSGS__MSG__DETAIL__REFERLINE_POINT__STRUCT_H_
 
@@ -17,6 +14,7 @@ extern "C"
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
+
 
 // Constants defined in the message
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/lh/planning_with_ROS2_course/build/base_msgs/base_msgs__py
+# Install script for directory: /home/lh/WorkSpace/ROS2_Planning/build/base_msgs/base_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lh/planning_with_ROS2_course/install/base_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/lh/WorkSpace/ROS2_Planning/install/base_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

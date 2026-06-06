@@ -192,7 +192,7 @@ base_msgs__msg__LocalPathPoint__copy(
 }
 
 base_msgs__msg__LocalPathPoint *
-base_msgs__msg__LocalPathPoint__create(void)
+base_msgs__msg__LocalPathPoint__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_msgs__msg__LocalPathPoint * msg = (base_msgs__msg__LocalPathPoint *)allocator.allocate(sizeof(base_msgs__msg__LocalPathPoint), allocator.state);

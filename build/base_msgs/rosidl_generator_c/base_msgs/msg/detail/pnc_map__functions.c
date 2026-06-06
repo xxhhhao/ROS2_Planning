@@ -149,7 +149,7 @@ base_msgs__msg__PNCMap__copy(
 }
 
 base_msgs__msg__PNCMap *
-base_msgs__msg__PNCMap__create(void)
+base_msgs__msg__PNCMap__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_msgs__msg__PNCMap * msg = (base_msgs__msg__PNCMap *)allocator.allocate(sizeof(base_msgs__msg__PNCMap), allocator.state);

@@ -37,7 +37,6 @@ static rosidl_typesupport_introspection_c__MessageMember base_msgs__msg__LocalSp
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -55,7 +54,6 @@ static rosidl_typesupport_introspection_c__MessageMember base_msgs__msg__LocalSp
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -73,7 +71,6 @@ static rosidl_typesupport_introspection_c__MessageMember base_msgs__msg__LocalSp
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -91,7 +88,6 @@ static rosidl_typesupport_introspection_c__MessageMember base_msgs__msg__LocalSp
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -109,7 +105,6 @@ static rosidl_typesupport_introspection_c__MessageMember base_msgs__msg__LocalSp
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -127,7 +122,6 @@ static rosidl_typesupport_introspection_c__MessageMember base_msgs__msg__LocalSp
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -145,7 +139,6 @@ static rosidl_typesupport_introspection_c__MessageMember base_msgs__msg__LocalSp
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -165,7 +158,6 @@ static const rosidl_typesupport_introspection_c__MessageMembers base_msgs__msg__
   "LocalSpeedsPoint",  // message name
   7,  // number of fields
   sizeof(base_msgs__msg__LocalSpeedsPoint),
-  false,  // has_any_key_member_
   base_msgs__msg__LocalSpeedsPoint__rosidl_typesupport_introspection_c__LocalSpeedsPoint_message_member_array,  // message members
   base_msgs__msg__LocalSpeedsPoint__rosidl_typesupport_introspection_c__LocalSpeedsPoint_init_function,  // function to initialize message memory (memory has to be allocated)
   base_msgs__msg__LocalSpeedsPoint__rosidl_typesupport_introspection_c__LocalSpeedsPoint_fini_function  // function to terminate message instance (will not free memory)
@@ -177,9 +169,6 @@ static rosidl_message_type_support_t base_msgs__msg__LocalSpeedsPoint__rosidl_ty
   0,
   &base_msgs__msg__LocalSpeedsPoint__rosidl_typesupport_introspection_c__LocalSpeedsPoint_message_members,
   get_message_typesupport_handle_function,
-  &base_msgs__msg__LocalSpeedsPoint__get_type_hash,
-  &base_msgs__msg__LocalSpeedsPoint__get_type_description,
-  &base_msgs__msg__LocalSpeedsPoint__get_type_description_sources,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_base_msgs

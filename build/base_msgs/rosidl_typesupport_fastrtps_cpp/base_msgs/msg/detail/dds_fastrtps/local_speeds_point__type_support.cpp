@@ -2,10 +2,8 @@
 // with input from base_msgs:msg/LocalSpeedsPoint.idl
 // generated code does not contain a copyright notice
 #include "base_msgs/msg/detail/local_speeds_point__rosidl_typesupport_fastrtps_cpp.hpp"
-#include "base_msgs/msg/detail/local_speeds_point__functions.h"
 #include "base_msgs/msg/detail/local_speeds_point__struct.hpp"
 
-#include <cstddef>
 #include <limits>
 #include <stdexcept>
 #include <string>
@@ -13,7 +11,6 @@
 #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp"
-#include "rosidl_typesupport_fastrtps_cpp/serialization_helpers.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp"
 #include "fastcdr/Cdr.h"
 
@@ -29,7 +26,6 @@ namespace msg
 namespace typesupport_fastrtps_cpp
 {
 
-
 bool
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_msgs
 cdr_serialize(
@@ -38,25 +34,18 @@ cdr_serialize(
 {
   // Member: t
   cdr << ros_message.t;
-
   // Member: s_2path
   cdr << ros_message.s_2path;
-
   // Member: ds_dt_2path
   cdr << ros_message.ds_dt_2path;
-
   // Member: dds_dt_2path
   cdr << ros_message.dds_dt_2path;
-
   // Member: speed
   cdr << ros_message.speed;
-
   // Member: acceleration
   cdr << ros_message.acceleration;
-
   // Member: dacceleration
   cdr << ros_message.dacceleration;
-
   return true;
 }
 
@@ -90,7 +79,6 @@ cdr_deserialize(
   return true;
 }  // NOLINT(readability/fn_size)
 
-
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_msgs
 get_serialized_size(
@@ -110,42 +98,36 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
   // Member: s_2path
   {
     size_t item_size = sizeof(ros_message.s_2path);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
   // Member: ds_dt_2path
   {
     size_t item_size = sizeof(ros_message.ds_dt_2path);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
   // Member: dds_dt_2path
   {
     size_t item_size = sizeof(ros_message.dds_dt_2path);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
   // Member: speed
   {
     size_t item_size = sizeof(ros_message.speed);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
   // Member: acceleration
   {
     size_t item_size = sizeof(ros_message.acceleration);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
   // Member: dacceleration
   {
     size_t item_size = sizeof(ros_message.dacceleration);
@@ -155,7 +137,6 @@ get_serialized_size(
 
   return current_alignment - initial_alignment;
 }
-
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_msgs
@@ -176,51 +157,65 @@ max_serialized_size_LocalSpeedsPoint(
   full_bounded = true;
   is_plain = true;
 
+
   // Member: t
   {
     size_t array_size = 1;
+
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
+
   // Member: s_2path
   {
     size_t array_size = 1;
+
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
+
   // Member: ds_dt_2path
   {
     size_t array_size = 1;
+
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
+
   // Member: dds_dt_2path
   {
     size_t array_size = 1;
+
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
+
   // Member: speed
   {
     size_t array_size = 1;
+
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
+
   // Member: acceleration
   {
     size_t array_size = 1;
+
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
+
   // Member: dacceleration
   {
     size_t array_size = 1;
+
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
@@ -241,193 +236,6 @@ max_serialized_size_LocalSpeedsPoint(
 
   return ret_val;
 }
-
-bool
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_msgs
-cdr_serialize_key(
-  const base_msgs::msg::LocalSpeedsPoint & ros_message,
-  eprosima::fastcdr::Cdr & cdr)
-{
-  // Member: t
-  cdr << ros_message.t;
-
-  // Member: s_2path
-  cdr << ros_message.s_2path;
-
-  // Member: ds_dt_2path
-  cdr << ros_message.ds_dt_2path;
-
-  // Member: dds_dt_2path
-  cdr << ros_message.dds_dt_2path;
-
-  // Member: speed
-  cdr << ros_message.speed;
-
-  // Member: acceleration
-  cdr << ros_message.acceleration;
-
-  // Member: dacceleration
-  cdr << ros_message.dacceleration;
-
-  return true;
-}
-
-size_t
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_msgs
-get_serialized_size_key(
-  const base_msgs::msg::LocalSpeedsPoint & ros_message,
-  size_t current_alignment)
-{
-  size_t initial_alignment = current_alignment;
-
-  const size_t padding = 4;
-  const size_t wchar_size = 4;
-  (void)padding;
-  (void)wchar_size;
-
-  // Member: t
-  {
-    size_t item_size = sizeof(ros_message.t);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Member: s_2path
-  {
-    size_t item_size = sizeof(ros_message.s_2path);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Member: ds_dt_2path
-  {
-    size_t item_size = sizeof(ros_message.ds_dt_2path);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Member: dds_dt_2path
-  {
-    size_t item_size = sizeof(ros_message.dds_dt_2path);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Member: speed
-  {
-    size_t item_size = sizeof(ros_message.speed);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Member: acceleration
-  {
-    size_t item_size = sizeof(ros_message.acceleration);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Member: dacceleration
-  {
-    size_t item_size = sizeof(ros_message.dacceleration);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  return current_alignment - initial_alignment;
-}
-
-size_t
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_msgs
-max_serialized_size_key_LocalSpeedsPoint(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment)
-{
-  size_t initial_alignment = current_alignment;
-
-  const size_t padding = 4;
-  const size_t wchar_size = 4;
-  size_t last_member_size = 0;
-  (void)last_member_size;
-  (void)padding;
-  (void)wchar_size;
-
-  full_bounded = true;
-  is_plain = true;
-
-  // Member: t
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: s_2path
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: ds_dt_2path
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: dds_dt_2path
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: speed
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: acceleration
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: dacceleration
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  size_t ret_val = current_alignment - initial_alignment;
-  if (is_plain) {
-    // All members are plain, and type is not empty.
-    // We still need to check that the in-memory alignment
-    // is the same as the CDR mandated alignment.
-    using DataType = base_msgs::msg::LocalSpeedsPoint;
-    is_plain =
-      (
-      offsetof(DataType, dacceleration) +
-      last_member_size
-      ) == ret_val;
-  }
-
-  return ret_val;
-}
-
 
 static bool _LocalSpeedsPoint__cdr_serialize(
   const void * untyped_ros_message,
@@ -478,17 +286,13 @@ static message_type_support_callbacks_t _LocalSpeedsPoint__callbacks = {
   _LocalSpeedsPoint__cdr_serialize,
   _LocalSpeedsPoint__cdr_deserialize,
   _LocalSpeedsPoint__get_serialized_size,
-  _LocalSpeedsPoint__max_serialized_size,
-  nullptr
+  _LocalSpeedsPoint__max_serialized_size
 };
 
 static rosidl_message_type_support_t _LocalSpeedsPoint__handle = {
   rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
   &_LocalSpeedsPoint__callbacks,
   get_message_typesupport_handle_function,
-  &base_msgs__msg__LocalSpeedsPoint__get_type_hash,
-  &base_msgs__msg__LocalSpeedsPoint__get_type_description,
-  &base_msgs__msg__LocalSpeedsPoint__get_type_description_sources,
 };
 
 }  // namespace typesupport_fastrtps_cpp

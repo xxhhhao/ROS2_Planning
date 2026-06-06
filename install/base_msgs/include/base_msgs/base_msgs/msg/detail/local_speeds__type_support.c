@@ -102,7 +102,6 @@ static rosidl_typesupport_introspection_c__MessageMember base_msgs__msg__LocalSp
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message (initialized later)
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -120,7 +119,6 @@ static rosidl_typesupport_introspection_c__MessageMember base_msgs__msg__LocalSp
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message (initialized later)
-    false,  // is key
     true,  // is array
     0,  // array size
     false,  // is upper bound
@@ -140,7 +138,6 @@ static const rosidl_typesupport_introspection_c__MessageMembers base_msgs__msg__
   "LocalSpeeds",  // message name
   2,  // number of fields
   sizeof(base_msgs__msg__LocalSpeeds),
-  false,  // has_any_key_member_
   base_msgs__msg__LocalSpeeds__rosidl_typesupport_introspection_c__LocalSpeeds_message_member_array,  // message members
   base_msgs__msg__LocalSpeeds__rosidl_typesupport_introspection_c__LocalSpeeds_init_function,  // function to initialize message memory (memory has to be allocated)
   base_msgs__msg__LocalSpeeds__rosidl_typesupport_introspection_c__LocalSpeeds_fini_function  // function to terminate message instance (will not free memory)
@@ -152,9 +149,6 @@ static rosidl_message_type_support_t base_msgs__msg__LocalSpeeds__rosidl_typesup
   0,
   &base_msgs__msg__LocalSpeeds__rosidl_typesupport_introspection_c__LocalSpeeds_message_members,
   get_message_typesupport_handle_function,
-  &base_msgs__msg__LocalSpeeds__get_type_hash,
-  &base_msgs__msg__LocalSpeeds__get_type_description,
-  &base_msgs__msg__LocalSpeeds__get_type_description_sources,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_base_msgs

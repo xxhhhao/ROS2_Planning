@@ -2,13 +2,6 @@
 # with input from base_msgs:msg/ReferlinePoint.idl
 # generated code does not contain a copyright notice
 
-# This is being done at the module level and not on the instance level to avoid looking
-# for the same variable multiple times on each instance. This variable is not supposed to
-# change during runtime so it makes sense to only look for it once.
-from os import getenv
-
-ros_python_check_fields = getenv('ROS_PYTHON_CHECK_FIELDS', default='')
-
 
 # Import statements for member types
 
@@ -73,7 +66,6 @@ class ReferlinePoint(metaclass=Metaclass_ReferlinePoint):
         '_rtheta',
         '_rkappa',
         '_rdkappa',
-        '_check_fields',
     ]
 
     _fields_and_field_types = {
@@ -84,8 +76,6 @@ class ReferlinePoint(metaclass=Metaclass_ReferlinePoint):
         'rdkappa': 'double',
     }
 
-    # This attribute is used to store an rosidl_parser.definition variable
-    # related to the data type of each of the components the message.
     SLOT_TYPES = (
         rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'PoseStamped'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
@@ -95,14 +85,9 @@ class ReferlinePoint(metaclass=Metaclass_ReferlinePoint):
     )
 
     def __init__(self, **kwargs):
-        if 'check_fields' in kwargs:
-            self._check_fields = kwargs['check_fields']
-        else:
-            self._check_fields = ros_python_check_fields == '1'
-        if self._check_fields:
-            assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
-                'Invalid arguments passed to constructor: %s' % \
-                ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
+            'Invalid arguments passed to constructor: %s' % \
+            ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         from geometry_msgs.msg import PoseStamped
         self.pose = kwargs.get('pose', PoseStamped())
         self.rs = kwargs.get('rs', float())
@@ -115,7 +100,7 @@ class ReferlinePoint(metaclass=Metaclass_ReferlinePoint):
         typename.pop()
         typename.append(self.__class__.__name__)
         args = []
-        for s, t in zip(self.get_fields_and_field_types().keys(), self.SLOT_TYPES):
+        for s, t in zip(self.__slots__, self.SLOT_TYPES):
             field = getattr(self, s)
             fieldstr = repr(field)
             # We use Python array type for fields that can be directly stored
@@ -129,12 +114,11 @@ class ReferlinePoint(metaclass=Metaclass_ReferlinePoint):
                 if len(field) == 0:
                     fieldstr = '[]'
                 else:
-                    if self._check_fields:
-                        assert fieldstr.startswith('array(')
+                    assert fieldstr.startswith('array(')
                     prefix = "array('X', "
                     suffix = ')'
                     fieldstr = fieldstr[len(prefix):-len(suffix)]
-            args.append(s + '=' + fieldstr)
+            args.append(s[1:] + '=' + fieldstr)
         return '%s(%s)' % ('.'.join(typename), ', '.join(args))
 
     def __eq__(self, other):
@@ -164,7 +148,7 @@ class ReferlinePoint(metaclass=Metaclass_ReferlinePoint):
 
     @pose.setter
     def pose(self, value):
-        if self._check_fields:
+        if __debug__:
             from geometry_msgs.msg import PoseStamped
             assert \
                 isinstance(value, PoseStamped), \
@@ -178,7 +162,7 @@ class ReferlinePoint(metaclass=Metaclass_ReferlinePoint):
 
     @rs.setter
     def rs(self, value):
-        if self._check_fields:
+        if __debug__:
             assert \
                 isinstance(value, float), \
                 "The 'rs' field must be of type 'float'"
@@ -193,7 +177,7 @@ class ReferlinePoint(metaclass=Metaclass_ReferlinePoint):
 
     @rtheta.setter
     def rtheta(self, value):
-        if self._check_fields:
+        if __debug__:
             assert \
                 isinstance(value, float), \
                 "The 'rtheta' field must be of type 'float'"
@@ -208,7 +192,7 @@ class ReferlinePoint(metaclass=Metaclass_ReferlinePoint):
 
     @rkappa.setter
     def rkappa(self, value):
-        if self._check_fields:
+        if __debug__:
             assert \
                 isinstance(value, float), \
                 "The 'rkappa' field must be of type 'float'"
@@ -223,7 +207,7 @@ class ReferlinePoint(metaclass=Metaclass_ReferlinePoint):
 
     @rdkappa.setter
     def rdkappa(self, value):
-        if self._check_fields:
+        if __debug__:
             assert \
                 isinstance(value, float), \
                 "The 'rdkappa' field must be of type 'float'"

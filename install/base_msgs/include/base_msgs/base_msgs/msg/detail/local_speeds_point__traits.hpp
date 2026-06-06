@@ -2,9 +2,6 @@
 // with input from base_msgs:msg/LocalSpeedsPoint.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "base_msgs/msg/local_speeds_point.hpp"
-
-
 #ifndef BASE_MSGS__MSG__DETAIL__LOCAL_SPEEDS_POINT__TRAITS_HPP_
 #define BASE_MSGS__MSG__DETAIL__LOCAL_SPEEDS_POINT__TRAITS_HPP_
 

@@ -1,4 +1,0 @@
-/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_normal/global_planner_normal.cpp: In member function ‘virtual nav_msgs::msg::Path Planning::GlobalPlannerNormal::search_global_path(const base_msgs::msg::PNCMap&)’:
-/home/lh/planning_with_ROS2_course/src/planning/src/global_planner/global_planner_normal/global_planner_normal.cpp:9:64: warning: unused parameter ‘pnc_map’ [-Wunused-parameter]
-    9 |     Path GlobalPlannerNormal::search_global_path(const PNCMap &pnc_map)
-      |                                                  ~~~~~~~~~~~~~~^~~~~~~

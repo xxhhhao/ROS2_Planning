@@ -1,4 +1,0 @@
-[ 30%] Built target mathlibs
-[ 40%] [32mBuilding CXX object src/decision_center/CMakeFiles/decision_center.dir/decision_center.cpp.o[0m
-[ 60%] Built target config_reader
-[ 90%] Built target planning_node

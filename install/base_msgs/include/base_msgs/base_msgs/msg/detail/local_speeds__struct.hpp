@@ -2,9 +2,6 @@
 // with input from base_msgs:msg/LocalSpeeds.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "base_msgs/msg/local_speeds.hpp"
-
-
 #ifndef BASE_MSGS__MSG__DETAIL__LOCAL_SPEEDS__STRUCT_HPP_
 #define BASE_MSGS__MSG__DETAIL__LOCAL_SPEEDS__STRUCT_HPP_
 

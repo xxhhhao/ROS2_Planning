@@ -2,10 +2,8 @@
 // with input from base_msgs:msg/LocalTrajectoryPoint.idl
 // generated code does not contain a copyright notice
 #include "base_msgs/msg/detail/local_trajectory_point__rosidl_typesupport_fastrtps_cpp.hpp"
-#include "base_msgs/msg/detail/local_trajectory_point__functions.h"
 #include "base_msgs/msg/detail/local_trajectory_point__struct.hpp"
 
-#include <cstddef>
 #include <limits>
 #include <stdexcept>
 #include <string>
@@ -13,7 +11,6 @@
 #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp"
-#include "rosidl_typesupport_fastrtps_cpp/serialization_helpers.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp"
 #include "fastcdr/Cdr.h"
 
@@ -36,17 +33,6 @@ size_t get_serialized_size(
   size_t current_alignment);
 size_t
 max_serialized_size_LocalPathPoint(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-bool cdr_serialize_key(
-  const base_msgs::msg::LocalPathPoint &,
-  eprosima::fastcdr::Cdr &);
-size_t get_serialized_size_key(
-  const base_msgs::msg::LocalPathPoint &,
-  size_t current_alignment);
-size_t
-max_serialized_size_key_LocalPathPoint(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
@@ -74,17 +60,6 @@ max_serialized_size_LocalSpeedsPoint(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
-bool cdr_serialize_key(
-  const base_msgs::msg::LocalSpeedsPoint &,
-  eprosima::fastcdr::Cdr &);
-size_t get_serialized_size_key(
-  const base_msgs::msg::LocalSpeedsPoint &,
-  size_t current_alignment);
-size_t
-max_serialized_size_key_LocalSpeedsPoint(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
 }  // namespace typesupport_fastrtps_cpp
 }  // namespace msg
 }  // namespace base_msgs
@@ -99,7 +74,6 @@ namespace msg
 namespace typesupport_fastrtps_cpp
 {
 
-
 bool
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_msgs
 cdr_serialize(
@@ -110,12 +84,10 @@ cdr_serialize(
   base_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.path_point,
     cdr);
-
   // Member: speed_point
   base_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.speed_point,
     cdr);
-
   return true;
 }
 
@@ -136,7 +108,6 @@ cdr_deserialize(
   return true;
 }  // NOLINT(readability/fn_size)
 
-
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_msgs
 get_serialized_size(
@@ -151,18 +122,18 @@ get_serialized_size(
   (void)wchar_size;
 
   // Member: path_point
+
   current_alignment +=
     base_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.path_point, current_alignment);
-
   // Member: speed_point
+
   current_alignment +=
     base_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.speed_point, current_alignment);
 
   return current_alignment - initial_alignment;
 }
-
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_msgs
@@ -183,9 +154,12 @@ max_serialized_size_LocalTrajectoryPoint(
   full_bounded = true;
   is_plain = true;
 
+
   // Member: path_point
   {
     size_t array_size = 1;
+
+
     last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
@@ -199,9 +173,12 @@ max_serialized_size_LocalTrajectoryPoint(
       is_plain &= inner_is_plain;
     }
   }
+
   // Member: speed_point
   {
     size_t array_size = 1;
+
+
     last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
@@ -231,121 +208,6 @@ max_serialized_size_LocalTrajectoryPoint(
 
   return ret_val;
 }
-
-bool
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_msgs
-cdr_serialize_key(
-  const base_msgs::msg::LocalTrajectoryPoint & ros_message,
-  eprosima::fastcdr::Cdr & cdr)
-{
-  // Member: path_point
-  base_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize_key(
-    ros_message.path_point,
-    cdr);
-
-  // Member: speed_point
-  base_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize_key(
-    ros_message.speed_point,
-    cdr);
-
-  return true;
-}
-
-size_t
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_msgs
-get_serialized_size_key(
-  const base_msgs::msg::LocalTrajectoryPoint & ros_message,
-  size_t current_alignment)
-{
-  size_t initial_alignment = current_alignment;
-
-  const size_t padding = 4;
-  const size_t wchar_size = 4;
-  (void)padding;
-  (void)wchar_size;
-
-  // Member: path_point
-  current_alignment +=
-    base_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size_key(
-    ros_message.path_point, current_alignment);
-
-  // Member: speed_point
-  current_alignment +=
-    base_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size_key(
-    ros_message.speed_point, current_alignment);
-
-  return current_alignment - initial_alignment;
-}
-
-size_t
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_msgs
-max_serialized_size_key_LocalTrajectoryPoint(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment)
-{
-  size_t initial_alignment = current_alignment;
-
-  const size_t padding = 4;
-  const size_t wchar_size = 4;
-  size_t last_member_size = 0;
-  (void)last_member_size;
-  (void)padding;
-  (void)wchar_size;
-
-  full_bounded = true;
-  is_plain = true;
-
-  // Member: path_point
-  {
-    size_t array_size = 1;
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size =
-        base_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_key_LocalPathPoint(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
-  }
-
-  // Member: speed_point
-  {
-    size_t array_size = 1;
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size =
-        base_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_key_LocalSpeedsPoint(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
-  }
-
-  size_t ret_val = current_alignment - initial_alignment;
-  if (is_plain) {
-    // All members are plain, and type is not empty.
-    // We still need to check that the in-memory alignment
-    // is the same as the CDR mandated alignment.
-    using DataType = base_msgs::msg::LocalTrajectoryPoint;
-    is_plain =
-      (
-      offsetof(DataType, speed_point) +
-      last_member_size
-      ) == ret_val;
-  }
-
-  return ret_val;
-}
-
 
 static bool _LocalTrajectoryPoint__cdr_serialize(
   const void * untyped_ros_message,
@@ -396,17 +258,13 @@ static message_type_support_callbacks_t _LocalTrajectoryPoint__callbacks = {
   _LocalTrajectoryPoint__cdr_serialize,
   _LocalTrajectoryPoint__cdr_deserialize,
   _LocalTrajectoryPoint__get_serialized_size,
-  _LocalTrajectoryPoint__max_serialized_size,
-  nullptr
+  _LocalTrajectoryPoint__max_serialized_size
 };
 
 static rosidl_message_type_support_t _LocalTrajectoryPoint__handle = {
   rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
   &_LocalTrajectoryPoint__callbacks,
   get_message_typesupport_handle_function,
-  &base_msgs__msg__LocalTrajectoryPoint__get_type_hash,
-  &base_msgs__msg__LocalTrajectoryPoint__get_type_description,
-  &base_msgs__msg__LocalTrajectoryPoint__get_type_description_sources,
 };
 
 }  // namespace typesupport_fastrtps_cpp

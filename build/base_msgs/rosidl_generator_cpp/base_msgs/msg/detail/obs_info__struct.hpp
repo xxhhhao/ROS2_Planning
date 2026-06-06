@@ -2,9 +2,6 @@
 // with input from base_msgs:msg/ObsInfo.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "base_msgs/msg/obs_info.hpp"
-
-
 #ifndef BASE_MSGS__MSG__DETAIL__OBS_INFO__STRUCT_HPP_
 #define BASE_MSGS__MSG__DETAIL__OBS_INFO__STRUCT_HPP_
 

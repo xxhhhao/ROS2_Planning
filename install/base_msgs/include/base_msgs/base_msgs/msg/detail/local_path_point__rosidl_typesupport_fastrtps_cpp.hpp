@@ -5,7 +5,6 @@
 #ifndef BASE_MSGS__MSG__DETAIL__LOCAL_PATH_POINT__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_
 #define BASE_MSGS__MSG__DETAIL__LOCAL_PATH_POINT__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_
 
-#include <cstddef>
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "base_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h"
@@ -55,25 +54,6 @@ get_serialized_size(
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_msgs
 max_serialized_size_LocalPathPoint(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-bool
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_msgs
-cdr_serialize_key(
-  const base_msgs::msg::LocalPathPoint & ros_message,
-  eprosima::fastcdr::Cdr &);
-
-size_t
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_msgs
-get_serialized_size_key(
-  const base_msgs::msg::LocalPathPoint & ros_message,
-  size_t current_alignment);
-
-size_t
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_msgs
-max_serialized_size_key_LocalPathPoint(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);

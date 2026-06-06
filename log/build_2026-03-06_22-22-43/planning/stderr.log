@@ -1,6 +1,0 @@
-/usr/bin/ld: CMakeFiles/planning_node.dir/planning_node.cpp.o: in function `main':
-planning_node.cpp:(.text+0x343): undefined reference to `Planning::PlanningProcess::process()'
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [src/planning_process/CMakeFiles/planning_node.dir/build.make:216：src/planning_process/planning_node] 错误 1
-gmake[1]: *** [CMakeFiles/Makefile2:296：src/planning_process/CMakeFiles/planning_node.dir/all] 错误 2
-gmake: *** [Makefile:146：all] 错误 2

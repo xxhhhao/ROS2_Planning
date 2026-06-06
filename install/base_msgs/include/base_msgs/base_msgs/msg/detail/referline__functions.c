@@ -93,7 +93,7 @@ base_msgs__msg__Referline__copy(
 }
 
 base_msgs__msg__Referline *
-base_msgs__msg__Referline__create(void)
+base_msgs__msg__Referline__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_msgs__msg__Referline * msg = (base_msgs__msg__Referline *)allocator.allocate(sizeof(base_msgs__msg__Referline), allocator.state);

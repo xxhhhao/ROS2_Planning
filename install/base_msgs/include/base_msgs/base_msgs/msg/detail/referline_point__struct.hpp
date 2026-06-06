@@ -2,9 +2,6 @@
 // with input from base_msgs:msg/ReferlinePoint.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "base_msgs/msg/referline_point.hpp"
-
-
 #ifndef BASE_MSGS__MSG__DETAIL__REFERLINE_POINT__STRUCT_HPP_
 #define BASE_MSGS__MSG__DETAIL__REFERLINE_POINT__STRUCT_HPP_
 

@@ -3,7 +3,7 @@ from launch_ros.actions import Node
 from launch_ros.parameter_descriptions import ParameterValue
 from launch.substitutions import Command
 from launch.actions import GroupAction
-from launch_ros.actions import PushROSNamespace
+from launch_ros.actions import SetParameter
 from ament_index_python.packages import get_package_share_directory
 import os
 
@@ -26,6 +26,7 @@ def generate_launch_description():
         package="robot_state_publisher",
         executable="robot_state_publisher",
         name="car_state_pub",
+        namespace="car",
         output="screen",
         parameters=[{"robot_description": car_para}]
     )
@@ -35,6 +36,7 @@ def generate_launch_description():
         package="joint_state_publisher",
         executable="joint_state_publisher",
         name="car_joint_state_pub",
+        namespace="car",
     )
 
     #手动控制关节运动的gui界面节点
@@ -56,6 +58,7 @@ def generate_launch_description():
         package="planning",
         executable="pnc_map_server",
         name="pnc_map_server",
+        namespace="planning",
     )
 
     #启动全局服务器节点
@@ -63,6 +66,7 @@ def generate_launch_description():
         package="planning",
         executable="global_path_server",
         name="global_path_server",
+        namespace="planning",
     )
 
 
@@ -71,30 +75,17 @@ def generate_launch_description():
         package="planning",
         executable="planning_process",
         name="planning_process",
-    )
-    #节点分组
-    car_main = GroupAction(
-        actions=[
-            PushROSNamespace("car"),
-            car_state_pub,
-            car_joint_state_pub,
-        ]
-    )
-    planning = GroupAction(
-        actions=[
-            PushROSNamespace("planning"),
-            planning_process,
-            pnc_map_server,
-            global_path_server,
-        ]
-
+        namespace="planning",
     )
 
     return LaunchDescription(
         [
-            car_main,
+            car_state_pub,
+            car_joint_state_pub,
             rviz2,
-            planning,
+            planning_process,
+            pnc_map_server,
+            global_path_server,
         ],
 
     )

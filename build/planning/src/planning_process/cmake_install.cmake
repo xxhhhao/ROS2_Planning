@@ -1,8 +1,8 @@
-# Install script for directory: /home/lh/planning_with_ROS2_course/src/planning/src/planning_process
+# Install script for directory: /home/lh/WorkSpace/ROS2_Planning/src/planning/src/planning_process
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lh/planning_with_ROS2_course/install/planning")
+  set(CMAKE_INSTALL_PREFIX "/home/lh/WorkSpace/ROS2_Planning/install/planning")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,12 +49,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/planning_process"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/planning" TYPE EXECUTABLE FILES "/home/lh/planning_with_ROS2_course/build/planning/src/planning_process/planning_process")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/planning" TYPE EXECUTABLE FILES "/home/lh/WorkSpace/ROS2_Planning/build/planning/src/planning_process/planning_process")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/planning_process" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/planning_process")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/planning_process"
-         OLD_RPATH "/opt/ros/jazzy/lib:/home/lh/planning_with_ROS2_course/build/planning/src/reference_line:/home/lh/planning_with_ROS2_course/build/planning/src/local_planner:/usr/local/lib:/home/lh/planning_with_ROS2_course/build/planning/src/decision_center:/home/lh/planning_with_ROS2_course/build/planning/src/vehicle_info:/home/lh/planning_with_ROS2_course/build/planning/src/common:/home/lh/planning_with_ROS2_course/install/base_msgs/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/lh/WorkSpace/ROS2_Planning/build/planning/src/reference_line:/home/lh/WorkSpace/ROS2_Planning/build/planning/src/local_planner:/usr/local/lib:/home/lh/WorkSpace/ROS2_Planning/build/planning/src/decision_center:/home/lh/WorkSpace/ROS2_Planning/build/planning/src/vehicle_info:/home/lh/WorkSpace/ROS2_Planning/build/planning/src/common:/home/lh/WorkSpace/ROS2_Planning/install/base_msgs/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/planning_process")
@@ -63,6 +63,6 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/lh/planning_with_ROS2_course/build/planning/src/planning_process/CMakeFiles/planning_process.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/lh/WorkSpace/ROS2_Planning/build/planning/src/planning_process/CMakeFiles/planning_process.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 

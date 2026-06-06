@@ -5,11 +5,9 @@
 
 
 #include <cassert>
-#include <cstddef>
 #include <limits>
 #include <string>
 #include "rosidl_typesupport_fastrtps_c/identifier.h"
-#include "rosidl_typesupport_fastrtps_c/serialization_helpers.hpp"
 #include "rosidl_typesupport_fastrtps_c/wstring_conversion.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
 #include "base_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
@@ -39,17 +37,6 @@ extern "C"
 #include "geometry_msgs/msg/detail/pose_stamped__functions.h"  // pose
 
 // forward declare type support functions
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_base_msgs
-bool cdr_serialize_geometry_msgs__msg__PoseStamped(
-  const geometry_msgs__msg__PoseStamped * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_base_msgs
-bool cdr_deserialize_geometry_msgs__msg__PoseStamped(
-  eprosima::fastcdr::Cdr & cdr,
-  geometry_msgs__msg__PoseStamped * ros_message);
-
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_base_msgs
 size_t get_serialized_size_geometry_msgs__msg__PoseStamped(
   const void * untyped_ros_message,
@@ -62,38 +49,33 @@ size_t max_serialized_size_geometry_msgs__msg__PoseStamped(
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_base_msgs
-bool cdr_serialize_key_geometry_msgs__msg__PoseStamped(
-  const geometry_msgs__msg__PoseStamped * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_base_msgs
-size_t get_serialized_size_key_geometry_msgs__msg__PoseStamped(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_base_msgs
-size_t max_serialized_size_key_geometry_msgs__msg__PoseStamped(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_base_msgs
 const rosidl_message_type_support_t *
   ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, geometry_msgs, msg, PoseStamped)();
 
 
 using _ReferlinePoint__ros_msg_type = base_msgs__msg__ReferlinePoint;
 
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_base_msgs
-bool cdr_serialize_base_msgs__msg__ReferlinePoint(
-  const base_msgs__msg__ReferlinePoint * ros_message,
+static bool _ReferlinePoint__cdr_serialize(
+  const void * untyped_ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  const _ReferlinePoint__ros_msg_type * ros_message = static_cast<const _ReferlinePoint__ros_msg_type *>(untyped_ros_message);
   // Field name: pose
   {
-    cdr_serialize_geometry_msgs__msg__PoseStamped(
-      &ros_message->pose, cdr);
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, PoseStamped
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->pose, cdr))
+    {
+      return false;
+    }
   }
 
   // Field name: rs
@@ -119,14 +101,27 @@ bool cdr_serialize_base_msgs__msg__ReferlinePoint(
   return true;
 }
 
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_base_msgs
-bool cdr_deserialize_base_msgs__msg__ReferlinePoint(
+static bool _ReferlinePoint__cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
-  base_msgs__msg__ReferlinePoint * ros_message)
+  void * untyped_ros_message)
 {
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  _ReferlinePoint__ros_msg_type * ros_message = static_cast<_ReferlinePoint__ros_msg_type *>(untyped_ros_message);
   // Field name: pose
   {
-    cdr_deserialize_geometry_msgs__msg__PoseStamped(cdr, &ros_message->pose);
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, PoseStamped
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->pose))
+    {
+      return false;
+    }
   }
 
   // Field name: rs
@@ -152,7 +147,6 @@ bool cdr_deserialize_base_msgs__msg__ReferlinePoint(
   return true;
 }  // NOLINT(readability/fn_size)
 
-
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_base_msgs
 size_t get_serialized_size_base_msgs__msg__ReferlinePoint(
   const void * untyped_ros_message,
@@ -167,32 +161,29 @@ size_t get_serialized_size_base_msgs__msg__ReferlinePoint(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: pose
+  // field.name pose
+
   current_alignment += get_serialized_size_geometry_msgs__msg__PoseStamped(
     &(ros_message->pose), current_alignment);
-
-  // Field name: rs
+  // field.name rs
   {
     size_t item_size = sizeof(ros_message->rs);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: rtheta
+  // field.name rtheta
   {
     size_t item_size = sizeof(ros_message->rtheta);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: rkappa
+  // field.name rkappa
   {
     size_t item_size = sizeof(ros_message->rkappa);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: rdkappa
+  // field.name rdkappa
   {
     size_t item_size = sizeof(ros_message->rdkappa);
     current_alignment += item_size +
@@ -202,6 +193,12 @@ size_t get_serialized_size_base_msgs__msg__ReferlinePoint(
   return current_alignment - initial_alignment;
 }
 
+static uint32_t _ReferlinePoint__get_serialized_size(const void * untyped_ros_message)
+{
+  return static_cast<uint32_t>(
+    get_serialized_size_base_msgs__msg__ReferlinePoint(
+      untyped_ros_message, 0));
+}
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_base_msgs
 size_t max_serialized_size_base_msgs__msg__ReferlinePoint(
@@ -221,9 +218,11 @@ size_t max_serialized_size_base_msgs__msg__ReferlinePoint(
   full_bounded = true;
   is_plain = true;
 
-  // Field name: pose
+  // member: pose
   {
     size_t array_size = 1;
+
+
     last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
@@ -238,201 +237,34 @@ size_t max_serialized_size_base_msgs__msg__ReferlinePoint(
       is_plain &= inner_is_plain;
     }
   }
-
-  // Field name: rs
+  // member: rs
   {
     size_t array_size = 1;
+
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-
-  // Field name: rtheta
+  // member: rtheta
   {
     size_t array_size = 1;
+
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-
-  // Field name: rkappa
+  // member: rkappa
   {
     size_t array_size = 1;
+
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-
-  // Field name: rdkappa
+  // member: rdkappa
   {
     size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
 
-
-  size_t ret_val = current_alignment - initial_alignment;
-  if (is_plain) {
-    // All members are plain, and type is not empty.
-    // We still need to check that the in-memory alignment
-    // is the same as the CDR mandated alignment.
-    using DataType = base_msgs__msg__ReferlinePoint;
-    is_plain =
-      (
-      offsetof(DataType, rdkappa) +
-      last_member_size
-      ) == ret_val;
-  }
-  return ret_val;
-}
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_base_msgs
-bool cdr_serialize_key_base_msgs__msg__ReferlinePoint(
-  const base_msgs__msg__ReferlinePoint * ros_message,
-  eprosima::fastcdr::Cdr & cdr)
-{
-  // Field name: pose
-  {
-    cdr_serialize_key_geometry_msgs__msg__PoseStamped(
-      &ros_message->pose, cdr);
-  }
-
-  // Field name: rs
-  {
-    cdr << ros_message->rs;
-  }
-
-  // Field name: rtheta
-  {
-    cdr << ros_message->rtheta;
-  }
-
-  // Field name: rkappa
-  {
-    cdr << ros_message->rkappa;
-  }
-
-  // Field name: rdkappa
-  {
-    cdr << ros_message->rdkappa;
-  }
-
-  return true;
-}
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_base_msgs
-size_t get_serialized_size_key_base_msgs__msg__ReferlinePoint(
-  const void * untyped_ros_message,
-  size_t current_alignment)
-{
-  const _ReferlinePoint__ros_msg_type * ros_message = static_cast<const _ReferlinePoint__ros_msg_type *>(untyped_ros_message);
-  (void)ros_message;
-
-  size_t initial_alignment = current_alignment;
-
-  const size_t padding = 4;
-  const size_t wchar_size = 4;
-  (void)padding;
-  (void)wchar_size;
-
-  // Field name: pose
-  current_alignment += get_serialized_size_key_geometry_msgs__msg__PoseStamped(
-    &(ros_message->pose), current_alignment);
-
-  // Field name: rs
-  {
-    size_t item_size = sizeof(ros_message->rs);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: rtheta
-  {
-    size_t item_size = sizeof(ros_message->rtheta);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: rkappa
-  {
-    size_t item_size = sizeof(ros_message->rkappa);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: rdkappa
-  {
-    size_t item_size = sizeof(ros_message->rdkappa);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  return current_alignment - initial_alignment;
-}
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_base_msgs
-size_t max_serialized_size_key_base_msgs__msg__ReferlinePoint(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment)
-{
-  size_t initial_alignment = current_alignment;
-
-  const size_t padding = 4;
-  const size_t wchar_size = 4;
-  size_t last_member_size = 0;
-  (void)last_member_size;
-  (void)padding;
-  (void)wchar_size;
-
-  full_bounded = true;
-  is_plain = true;
-  // Field name: pose
-  {
-    size_t array_size = 1;
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size;
-      inner_size =
-        max_serialized_size_key_geometry_msgs__msg__PoseStamped(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
-  }
-
-  // Field name: rs
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Field name: rtheta
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Field name: rkappa
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Field name: rdkappa
-  {
-    size_t array_size = 1;
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
@@ -450,41 +282,8 @@ size_t max_serialized_size_key_base_msgs__msg__ReferlinePoint(
       last_member_size
       ) == ret_val;
   }
+
   return ret_val;
-}
-
-
-static bool _ReferlinePoint__cdr_serialize(
-  const void * untyped_ros_message,
-  eprosima::fastcdr::Cdr & cdr)
-{
-  if (!untyped_ros_message) {
-    fprintf(stderr, "ros message handle is null\n");
-    return false;
-  }
-  const base_msgs__msg__ReferlinePoint * ros_message = static_cast<const base_msgs__msg__ReferlinePoint *>(untyped_ros_message);
-  (void)ros_message;
-  return cdr_serialize_base_msgs__msg__ReferlinePoint(ros_message, cdr);
-}
-
-static bool _ReferlinePoint__cdr_deserialize(
-  eprosima::fastcdr::Cdr & cdr,
-  void * untyped_ros_message)
-{
-  if (!untyped_ros_message) {
-    fprintf(stderr, "ros message handle is null\n");
-    return false;
-  }
-  base_msgs__msg__ReferlinePoint * ros_message = static_cast<base_msgs__msg__ReferlinePoint *>(untyped_ros_message);
-  (void)ros_message;
-  return cdr_deserialize_base_msgs__msg__ReferlinePoint(cdr, ros_message);
-}
-
-static uint32_t _ReferlinePoint__get_serialized_size(const void * untyped_ros_message)
-{
-  return static_cast<uint32_t>(
-    get_serialized_size_base_msgs__msg__ReferlinePoint(
-      untyped_ros_message, 0));
 }
 
 static size_t _ReferlinePoint__max_serialized_size(char & bounds_info)
@@ -509,17 +308,13 @@ static message_type_support_callbacks_t __callbacks_ReferlinePoint = {
   _ReferlinePoint__cdr_serialize,
   _ReferlinePoint__cdr_deserialize,
   _ReferlinePoint__get_serialized_size,
-  _ReferlinePoint__max_serialized_size,
-  nullptr
+  _ReferlinePoint__max_serialized_size
 };
 
 static rosidl_message_type_support_t _ReferlinePoint__type_support = {
   rosidl_typesupport_fastrtps_c__identifier,
   &__callbacks_ReferlinePoint,
   get_message_typesupport_handle_function,
-  &base_msgs__msg__ReferlinePoint__get_type_hash,
-  &base_msgs__msg__ReferlinePoint__get_type_description,
-  &base_msgs__msg__ReferlinePoint__get_type_description_sources,
 };
 
 const rosidl_message_type_support_t *

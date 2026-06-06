@@ -2,9 +2,6 @@
 // with input from base_msgs:msg/PNCMap.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "base_msgs/msg/pnc_map.hpp"
-
-
 #ifndef BASE_MSGS__MSG__DETAIL__PNC_MAP__STRUCT_HPP_
 #define BASE_MSGS__MSG__DETAIL__PNC_MAP__STRUCT_HPP_
 

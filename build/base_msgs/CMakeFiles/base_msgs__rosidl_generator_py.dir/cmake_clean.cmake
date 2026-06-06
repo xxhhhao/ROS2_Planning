@@ -25,8 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/base_msgs__rosidl_generator_py.dir/rosidl_generator_py/base_msgs/srv/_global_path_service_s.c.o.d"
   "CMakeFiles/base_msgs__rosidl_generator_py.dir/rosidl_generator_py/base_msgs/srv/_pnc_map_service_s.c.o"
   "CMakeFiles/base_msgs__rosidl_generator_py.dir/rosidl_generator_py/base_msgs/srv/_pnc_map_service_s.c.o.d"
-  "libbase_msgs__rosidl_generator_py.pdb"
-  "libbase_msgs__rosidl_generator_py.so"
+  "rosidl_generator_py/base_msgs/libbase_msgs__rosidl_generator_py.pdb"
+  "rosidl_generator_py/base_msgs/libbase_msgs__rosidl_generator_py.so"
 )
 
 # Per-language clean rules from dependency scanning.

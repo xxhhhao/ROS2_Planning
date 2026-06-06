@@ -22,5 +22,9 @@ msg/ReferlinePoint.idl
 msg/ReferlinePoint.msg
 srv/GlobalPathService.idl
 srv/GlobalPathService.srv
+srv/GlobalPathService_Request.msg
+srv/GlobalPathService_Response.msg
 srv/PNCMapService.idl
 srv/PNCMapService.srv
+srv/PNCMapService_Request.msg
+srv/PNCMapService_Response.msg

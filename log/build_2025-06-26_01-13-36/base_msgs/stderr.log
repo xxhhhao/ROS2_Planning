@@ -1,5 +1,0 @@
-[31mCMake Error at CMakeLists.txt:23 (find_package):
-  find_package called with invalid argument "REQUIED"
-
-[0m
-gmake: *** [Makefile:226：cmake_check_build_system] 错误 1

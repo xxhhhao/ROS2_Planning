@@ -11,9 +11,23 @@ namespace Planning
 		process_config_->read_planning_process_config();
 		obs_dis_ = process_config_->process().obs_dis_;
 
-		// 创建地图服务器和全局路径客户端
+		//创建车辆和障碍物
+		car_ = std::make_shared<MainCar>();
+
+		//坐标广播器
+		tf_broadcaster_ = std::make_shared<StaticTransformBroadcaster>(this);
+
+		//创建监听器
+		buffer_ = std::make_unique<Buffer>(this->get_clock());
+		tf_listener_ = std::make_shared<TransformListener>(*buffer_,this);   
+
+		//创建地图服务器和全局路径客户端
 		map_client_ = this->create_client<PNCMapService>("pnc_map_server");
 		global_path_client_ = this->create_client<GlobalPathService>("global_path_server");
+
+		//创建参考线和参考线的发布器
+		refer_line_creator_ = std::make_shared<ReferenceLineCreator>();
+		refer_line_pub_ = this->create_publisher<Path>("reference_line", 10);
 	}
 
 	bool PlanningProcess::process() // 总流程
@@ -29,6 +43,8 @@ namespace Planning
 			return false;
 		}
 		//进入规划总流程
+		//以0.1s为周期进行一帧一帧规划
+		timer_ = this->create_wall_timer(0.1s,std::bind(&PlanningProcess::planning_callback,this));
 
 		return true;
 	}
@@ -36,6 +52,7 @@ namespace Planning
 	bool PlanningProcess::planning_init() // 流程初始化
 	{
 		//生成车辆
+		vehicle_spawn(car_);
 
 		//连接地图服务器
 		if(!connect_server(map_client_))
@@ -67,7 +84,57 @@ namespace Planning
 		return true;
 	}
 
-	bool PlanningProcess::map_request() // 发送地图请求
+    void PlanningProcess::vehicle_spawn(const std::shared_ptr<VehicleBase> &vehicle) //生成车辆
+    {
+		TransformStamped spawn;
+		spawn.header.stamp = this->now();
+		spawn.header.frame_id = process_config_->pnc_map().frame_;
+		spawn.child_frame_id = vehicle->child_frame();
+
+		spawn.transform.translation.x = vehicle->loc_point().pose.position.x;
+		spawn.transform.translation.y = vehicle->loc_point().pose.position.y;
+		spawn.transform.translation.z = vehicle->loc_point().pose.position.z;
+
+		spawn.transform.rotation.x = vehicle->loc_point().pose.orientation.x;
+		spawn.transform.rotation.y = vehicle->loc_point().pose.orientation.y;
+		spawn.transform.rotation.z = vehicle->loc_point().pose.orientation.z;
+		spawn.transform.rotation.w = vehicle->loc_point().pose.orientation.w;
+
+		RCLCPP_INFO(this->get_logger(),"vehicle %s spawned, x= %2.f, y = %2.f",
+								spawn.child_frame_id.c_str(),
+								vehicle->loc_point().pose.position.x,
+								vehicle->loc_point().pose.position.y);
+		tf_broadcaster_->sendTransform(spawn);
+
+
+    }
+
+    void PlanningProcess::get_location(const std::shared_ptr<VehicleBase> &vehicle) //监听定位点
+    {
+		try
+		{
+			PoseStamped point;
+			auto ts = buffer_->lookupTransform(process_config_->pnc_map().frame_,
+							vehicle->child_frame(),tf2::TimePointZero);
+			point.header = ts.header;
+			point.pose.position.x = ts.transform.translation.x;
+			point.pose.position.y = ts.transform.translation.y;
+			point.pose.position.z = ts.transform.translation.z;
+			point.pose.orientation.x = ts.transform.rotation.x;
+			point.pose.orientation.y = ts.transform.rotation.y;
+			point.pose.orientation.z = ts.transform.rotation.z;
+			point.pose.orientation.w = ts.transform.rotation.w;
+			vehicle->update_location(point);
+
+		}
+		catch(const tf2::LookupException &e)
+		{
+			RCLCPP_ERROR(this->get_logger(),"Lookup Exception: %s",e.what());
+		}
+		
+    }
+
+    bool PlanningProcess::map_request() // 发送地图请求
 	{
 		RCLCPP_INFO(this->get_logger(),"Sending map request/");
 
@@ -98,7 +165,6 @@ namespace Planning
 	{
 		RCLCPP_INFO(this->get_logger(),"Sending global_path request/");
 		
-
 		//生成请求
 		auto request = std::make_shared<GlobalPathService::Request>();
 		request->pnc_map = pnc_map_;
@@ -123,7 +189,48 @@ namespace Planning
 		return false;
 	}
 
-	template <typename T>
+    void PlanningProcess::planning_callback() //总流程回调
+    {
+		const auto start_time = this->get_clock()->now();
+
+		//监听车辆定位
+		get_location(car_);
+
+		//参考线
+		const auto refer_line = refer_line_creator_->create_reference_line(global_path_,car_->loc_point());
+		if(refer_line.refer_line.empty())
+		{
+			RCLCPP_ERROR(this->get_logger(),"reference line empty!");
+			return;
+		}
+		const auto refer_line_rviz = refer_line_creator_->referline_to_rviz();
+		refer_line_pub_->publish(refer_line_rviz);
+
+		//主车和障碍物向参考线投影
+		//障碍物按s值排列
+		//路径规划
+		//障碍物向路径投影
+		//速度决策
+		//速度规划
+		//合成轨迹
+		//更新绘图信息
+		//更新车辆信息
+		RCLCPP_INFO(this->get_logger(),"----car state: [location]:(%.2f, %.2f),[speed]: %2.f,[acceleration]: %2.f,[theta]: %2.f,[kappa]:%.2f",
+				car_->loc_point().pose.position.x,car_->loc_point().pose.position.y,
+				car_->speed(),car_->acceleration(),car_->theta(),car_->kappa());
+		const auto end_time = this->get_clock()->now();
+		const auto planning_total_time = end_time.seconds()-start_time.seconds();
+		RCLCPP_INFO(this->get_logger(),"[⏳]planning total time: %fms\n",planning_total_time*1000);
+		//防止系统卡死
+		if(planning_total_time > 1.0)
+		{
+			RCLCPP_ERROR(this->get_logger(),"[❌]planning time too long!");
+		}
+
+
+    }
+
+    template <typename T>
 	bool PlanningProcess::connect_server(const T &client) //连接服务器
 	{
 		//判断客户端类型

@@ -55,7 +55,6 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/base_msgs/msg/pnc_map.hpp"
   "rosidl_generator_cpp/base_msgs/msg/referline.hpp"
   "rosidl_generator_cpp/base_msgs/msg/referline_point.hpp"
-  "rosidl_generator_cpp/base_msgs/msg/rosidl_generator_cpp__visibility_control.hpp"
   "rosidl_generator_cpp/base_msgs/srv/detail/global_path_service__builder.hpp"
   "rosidl_generator_cpp/base_msgs/srv/detail/global_path_service__struct.hpp"
   "rosidl_generator_cpp/base_msgs/srv/detail/global_path_service__traits.hpp"

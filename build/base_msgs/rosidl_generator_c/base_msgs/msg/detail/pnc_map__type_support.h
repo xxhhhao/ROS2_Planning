@@ -2,9 +2,6 @@
 // with input from base_msgs:msg/PNCMap.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "base_msgs/msg/pnc_map.h"
-
-
 #ifndef BASE_MSGS__MSG__DETAIL__PNC_MAP__TYPE_SUPPORT_H_
 #define BASE_MSGS__MSG__DETAIL__PNC_MAP__TYPE_SUPPORT_H_
 
@@ -27,7 +24,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
   base_msgs,
   msg,
   PNCMap
-)(void);
+)();
 
 #ifdef __cplusplus
 }

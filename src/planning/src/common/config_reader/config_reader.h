@@ -18,7 +18,7 @@ namespace Planning
       double width_ = 0.0;      //长
       double pose_x_ = 0.0;     //宽
       double pose_y_ = 0.0;     //x
-      double pose_theta = 0.0;  //y
+      double pose_theta_ = 0.0;  //y
       double speed_ori_ = 0.0;  //初速度
    };
 

@@ -93,7 +93,7 @@ base_msgs__msg__LocalPath__copy(
 }
 
 base_msgs__msg__LocalPath *
-base_msgs__msg__LocalPath__create(void)
+base_msgs__msg__LocalPath__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_msgs__msg__LocalPath * msg = (base_msgs__msg__LocalPath *)allocator.allocate(sizeof(base_msgs__msg__LocalPath), allocator.state);

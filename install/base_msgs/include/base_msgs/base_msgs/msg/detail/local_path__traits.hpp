@@ -2,9 +2,6 @@
 // with input from base_msgs:msg/LocalPath.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "base_msgs/msg/local_path.hpp"
-
-
 #ifndef BASE_MSGS__MSG__DETAIL__LOCAL_PATH__TRAITS_HPP_
 #define BASE_MSGS__MSG__DETAIL__LOCAL_PATH__TRAITS_HPP_
 

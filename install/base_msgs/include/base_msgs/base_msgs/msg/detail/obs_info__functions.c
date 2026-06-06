@@ -113,7 +113,7 @@ base_msgs__msg__ObsInfo__copy(
 }
 
 base_msgs__msg__ObsInfo *
-base_msgs__msg__ObsInfo__create(void)
+base_msgs__msg__ObsInfo__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_msgs__msg__ObsInfo * msg = (base_msgs__msg__ObsInfo *)allocator.allocate(sizeof(base_msgs__msg__ObsInfo), allocator.state);

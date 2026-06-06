@@ -93,7 +93,7 @@ base_msgs__msg__LocalTrajectory__copy(
 }
 
 base_msgs__msg__LocalTrajectory *
-base_msgs__msg__LocalTrajectory__create(void)
+base_msgs__msg__LocalTrajectory__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_msgs__msg__LocalTrajectory * msg = (base_msgs__msg__LocalTrajectory *)allocator.allocate(sizeof(base_msgs__msg__LocalTrajectory), allocator.state);

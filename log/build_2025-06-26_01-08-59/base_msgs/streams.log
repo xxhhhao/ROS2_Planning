@@ -1,8 +1,0 @@
-[0.028s] Invoking command in '/home/lh/planning_with_ROS2_course/build/base_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/base_msgs -- -j8 -l8
-[0.318s] -- Configuring incomplete, errors occurred!
-[0.318s] [31mCMake Error at CMakeLists.txt:7 (id):
-[0.318s]   Unknown CMake command "id".
-[0.318s] 
-[0.318s] [0m
-[0.318s] gmake: *** [Makefile:226：cmake_check_build_system] 错误 1
-[0.324s] Invoked command in '/home/lh/planning_with_ROS2_course/build/base_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lh/planning_with_ROS2_course/install/data_plot:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lh/planning_with_ROS2_course/build/base_msgs -- -j8 -l8

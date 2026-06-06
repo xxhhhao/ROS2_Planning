@@ -114,7 +114,7 @@ base_msgs__msg__PlotInfo__copy(
 }
 
 base_msgs__msg__PlotInfo *
-base_msgs__msg__PlotInfo__create(void)
+base_msgs__msg__PlotInfo__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_msgs__msg__PlotInfo * msg = (base_msgs__msg__PlotInfo *)allocator.allocate(sizeof(base_msgs__msg__PlotInfo), allocator.state);

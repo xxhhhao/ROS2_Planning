@@ -19,7 +19,7 @@ namespace Planning
         vehicle.width_ = planning_config["vehicle"][name]["width"].as<double>();
         vehicle.pose_x_ = planning_config["vehicle"][name]["pose_x"].as<double>();
         vehicle.pose_y_ = planning_config["vehicle"][name]["pose_y"].as<double>();
-        vehicle.pose_theta = planning_config["vehicle"][name]["pose_theta"].as<double>();
+        vehicle.pose_theta_ = planning_config["vehicle"][name]["pose_theta"].as<double>();
         vehicle.speed_ori_ = planning_config["vehicle"][name]["speed_ori"].as<double>();
 
         if(name != "main_car")

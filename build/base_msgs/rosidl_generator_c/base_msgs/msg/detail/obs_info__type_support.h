@@ -2,9 +2,6 @@
 // with input from base_msgs:msg/ObsInfo.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "base_msgs/msg/obs_info.h"
-
-
 #ifndef BASE_MSGS__MSG__DETAIL__OBS_INFO__TYPE_SUPPORT_H_
 #define BASE_MSGS__MSG__DETAIL__OBS_INFO__TYPE_SUPPORT_H_
 
@@ -27,7 +24,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
   base_msgs,
   msg,
   ObsInfo
-)(void);
+)();
 
 #ifdef __cplusplus
 }

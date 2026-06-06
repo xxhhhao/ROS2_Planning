@@ -6,7 +6,6 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "base_msgs/msg/detail/local_speeds__struct.h"
 #include "base_msgs/msg/detail/local_speeds__type_support.h"
-#include "base_msgs/msg/detail/local_speeds__functions.h"
 #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/message_type_support_dispatch.h"
 #include "rosidl_typesupport_c/type_support_map.h"
@@ -73,9 +72,6 @@ static const rosidl_message_type_support_t LocalSpeeds_message_type_support_hand
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_LocalSpeeds_message_typesupport_map),
   rosidl_typesupport_c__get_message_typesupport_handle_function,
-  &base_msgs__msg__LocalSpeeds__get_type_hash,
-  &base_msgs__msg__LocalSpeeds__get_type_description,
-  &base_msgs__msg__LocalSpeeds__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c

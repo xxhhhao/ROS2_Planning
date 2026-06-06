@@ -1,5 +1,5 @@
-#ifndef REFERENCE_LINE_CREATOR_H_
-#define REFERENCE_LINE_CREATOR_H_
+#ifndef REFERENCE_LINE_SMOOTHER_H_
+#define REFERENCE_LINE_SMOOTHER_H_
 
 #include "rclcpp/rclcpp.hpp"
 #include "config_reader.h"
@@ -9,14 +9,14 @@
 
 namespace Planning
 {
-class ReferenceLineSmoother
-{
-public:
-    ReferenceLineSmoother();
+    class ReferenceLineSmoother
+    {
+    public:
+        ReferenceLineSmoother();
 
-private:
+    private:
 
-};
+    };
 }  // namespace Planning
-#endif  // REFERENCE_LINE_CREATOR_H_
+#endif  // REFERENCE_LINE_SMOOTHER_H_
 

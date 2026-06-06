@@ -93,7 +93,7 @@ base_msgs__msg__LocalSpeeds__copy(
 }
 
 base_msgs__msg__LocalSpeeds *
-base_msgs__msg__LocalSpeeds__create(void)
+base_msgs__msg__LocalSpeeds__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_msgs__msg__LocalSpeeds * msg = (base_msgs__msg__LocalSpeeds *)allocator.allocate(sizeof(base_msgs__msg__LocalSpeeds), allocator.state);

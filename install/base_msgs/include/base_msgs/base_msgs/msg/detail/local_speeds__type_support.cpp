@@ -9,7 +9,6 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_cpp/message_type_support.hpp"
 #include "rosidl_typesupport_interface/macros.h"
-#include "base_msgs/msg/detail/local_speeds__functions.h"
 #include "base_msgs/msg/detail/local_speeds__struct.hpp"
 #include "rosidl_typesupport_introspection_cpp/field_types.hpp"
 #include "rosidl_typesupport_introspection_cpp/identifier.hpp"
@@ -89,7 +88,6 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember LocalSpeeds_m
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<std_msgs::msg::Header>(),  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -107,7 +105,6 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember LocalSpeeds_m
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<base_msgs::msg::LocalSpeedsPoint>(),  // members of sub message
-    false,  // is key
     true,  // is array
     0,  // array size
     false,  // is upper bound
@@ -127,7 +124,6 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMembers LocalSpeeds_
   "LocalSpeeds",  // message name
   2,  // number of fields
   sizeof(base_msgs::msg::LocalSpeeds),
-  false,  // has_any_key_member_
   LocalSpeeds_message_member_array,  // message members
   LocalSpeeds_init_function,  // function to initialize message memory (memory has to be allocated)
   LocalSpeeds_fini_function  // function to terminate message instance (will not free memory)
@@ -137,9 +133,6 @@ static const rosidl_message_type_support_t LocalSpeeds_message_type_support_hand
   ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
   &LocalSpeeds_message_members,
   get_message_typesupport_handle_function,
-  &base_msgs__msg__LocalSpeeds__get_type_hash,
-  &base_msgs__msg__LocalSpeeds__get_type_description,
-  &base_msgs__msg__LocalSpeeds__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_introspection_cpp

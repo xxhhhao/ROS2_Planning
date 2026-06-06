@@ -2,9 +2,6 @@
 // with input from base_msgs:msg/LocalPath.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "base_msgs/msg/local_path.h"
-
-
 #ifndef BASE_MSGS__MSG__DETAIL__LOCAL_PATH__TYPE_SUPPORT_H_
 #define BASE_MSGS__MSG__DETAIL__LOCAL_PATH__TYPE_SUPPORT_H_
 
@@ -27,7 +24,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
   base_msgs,
   msg,
   LocalPath
-)(void);
+)();
 
 #ifdef __cplusplus
 }

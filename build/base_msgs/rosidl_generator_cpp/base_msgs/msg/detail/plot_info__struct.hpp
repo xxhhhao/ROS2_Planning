@@ -2,9 +2,6 @@
 // with input from base_msgs:msg/PlotInfo.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "base_msgs/msg/plot_info.hpp"
-
-
 #ifndef BASE_MSGS__MSG__DETAIL__PLOT_INFO__STRUCT_HPP_
 #define BASE_MSGS__MSG__DETAIL__PLOT_INFO__STRUCT_HPP_
 

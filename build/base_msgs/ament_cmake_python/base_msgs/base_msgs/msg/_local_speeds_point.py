@@ -2,13 +2,6 @@
 # with input from base_msgs:msg/LocalSpeedsPoint.idl
 # generated code does not contain a copyright notice
 
-# This is being done at the module level and not on the instance level to avoid looking
-# for the same variable multiple times on each instance. This variable is not supposed to
-# change during runtime so it makes sense to only look for it once.
-from os import getenv
-
-ros_python_check_fields = getenv('ROS_PYTHON_CHECK_FIELDS', default='')
-
 
 # Import statements for member types
 
@@ -71,7 +64,6 @@ class LocalSpeedsPoint(metaclass=Metaclass_LocalSpeedsPoint):
         '_speed',
         '_acceleration',
         '_dacceleration',
-        '_check_fields',
     ]
 
     _fields_and_field_types = {
@@ -84,8 +76,6 @@ class LocalSpeedsPoint(metaclass=Metaclass_LocalSpeedsPoint):
         'dacceleration': 'double',
     }
 
-    # This attribute is used to store an rosidl_parser.definition variable
-    # related to the data type of each of the components the message.
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
@@ -97,14 +87,9 @@ class LocalSpeedsPoint(metaclass=Metaclass_LocalSpeedsPoint):
     )
 
     def __init__(self, **kwargs):
-        if 'check_fields' in kwargs:
-            self._check_fields = kwargs['check_fields']
-        else:
-            self._check_fields = ros_python_check_fields == '1'
-        if self._check_fields:
-            assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
-                'Invalid arguments passed to constructor: %s' % \
-                ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
+            'Invalid arguments passed to constructor: %s' % \
+            ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.t = kwargs.get('t', float())
         self.s_2path = kwargs.get('s_2path', float())
         self.ds_dt_2path = kwargs.get('ds_dt_2path', float())
@@ -118,7 +103,7 @@ class LocalSpeedsPoint(metaclass=Metaclass_LocalSpeedsPoint):
         typename.pop()
         typename.append(self.__class__.__name__)
         args = []
-        for s, t in zip(self.get_fields_and_field_types().keys(), self.SLOT_TYPES):
+        for s, t in zip(self.__slots__, self.SLOT_TYPES):
             field = getattr(self, s)
             fieldstr = repr(field)
             # We use Python array type for fields that can be directly stored
@@ -132,12 +117,11 @@ class LocalSpeedsPoint(metaclass=Metaclass_LocalSpeedsPoint):
                 if len(field) == 0:
                     fieldstr = '[]'
                 else:
-                    if self._check_fields:
-                        assert fieldstr.startswith('array(')
+                    assert fieldstr.startswith('array(')
                     prefix = "array('X', "
                     suffix = ')'
                     fieldstr = fieldstr[len(prefix):-len(suffix)]
-            args.append(s + '=' + fieldstr)
+            args.append(s[1:] + '=' + fieldstr)
         return '%s(%s)' % ('.'.join(typename), ', '.join(args))
 
     def __eq__(self, other):
@@ -171,7 +155,7 @@ class LocalSpeedsPoint(metaclass=Metaclass_LocalSpeedsPoint):
 
     @t.setter
     def t(self, value):
-        if self._check_fields:
+        if __debug__:
             assert \
                 isinstance(value, float), \
                 "The 't' field must be of type 'float'"
@@ -186,7 +170,7 @@ class LocalSpeedsPoint(metaclass=Metaclass_LocalSpeedsPoint):
 
     @s_2path.setter
     def s_2path(self, value):
-        if self._check_fields:
+        if __debug__:
             assert \
                 isinstance(value, float), \
                 "The 's_2path' field must be of type 'float'"
@@ -201,7 +185,7 @@ class LocalSpeedsPoint(metaclass=Metaclass_LocalSpeedsPoint):
 
     @ds_dt_2path.setter
     def ds_dt_2path(self, value):
-        if self._check_fields:
+        if __debug__:
             assert \
                 isinstance(value, float), \
                 "The 'ds_dt_2path' field must be of type 'float'"
@@ -216,7 +200,7 @@ class LocalSpeedsPoint(metaclass=Metaclass_LocalSpeedsPoint):
 
     @dds_dt_2path.setter
     def dds_dt_2path(self, value):
-        if self._check_fields:
+        if __debug__:
             assert \
                 isinstance(value, float), \
                 "The 'dds_dt_2path' field must be of type 'float'"
@@ -231,7 +215,7 @@ class LocalSpeedsPoint(metaclass=Metaclass_LocalSpeedsPoint):
 
     @speed.setter
     def speed(self, value):
-        if self._check_fields:
+        if __debug__:
             assert \
                 isinstance(value, float), \
                 "The 'speed' field must be of type 'float'"
@@ -246,7 +230,7 @@ class LocalSpeedsPoint(metaclass=Metaclass_LocalSpeedsPoint):
 
     @acceleration.setter
     def acceleration(self, value):
-        if self._check_fields:
+        if __debug__:
             assert \
                 isinstance(value, float), \
                 "The 'acceleration' field must be of type 'float'"
@@ -261,7 +245,7 @@ class LocalSpeedsPoint(metaclass=Metaclass_LocalSpeedsPoint):
 
     @dacceleration.setter
     def dacceleration(self, value):
-        if self._check_fields:
+        if __debug__:
             assert \
                 isinstance(value, float), \
                 "The 'dacceleration' field must be of type 'float'"

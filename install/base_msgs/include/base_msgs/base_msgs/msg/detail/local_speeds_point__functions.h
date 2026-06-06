@@ -2,9 +2,6 @@
 // with input from base_msgs:msg/LocalSpeedsPoint.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "base_msgs/msg/local_speeds_point.h"
-
-
 #ifndef BASE_MSGS__MSG__DETAIL__LOCAL_SPEEDS_POINT__FUNCTIONS_H_
 #define BASE_MSGS__MSG__DETAIL__LOCAL_SPEEDS_POINT__FUNCTIONS_H_
 
@@ -16,12 +13,6 @@ extern "C"
 #include <stdbool.h>
 #include <stdlib.h>
 
-#include "rosidl_runtime_c/action_type_support_struct.h"
-#include "rosidl_runtime_c/message_type_support_struct.h"
-#include "rosidl_runtime_c/service_type_support_struct.h"
-#include "rosidl_runtime_c/type_description/type_description__struct.h"
-#include "rosidl_runtime_c/type_description/type_source__struct.h"
-#include "rosidl_runtime_c/type_hash.h"
 #include "rosidl_runtime_c/visibility_control.h"
 #include "base_msgs/msg/rosidl_generator_c__visibility_control.h"
 
@@ -62,7 +53,7 @@ base_msgs__msg__LocalSpeedsPoint__fini(base_msgs__msg__LocalSpeedsPoint * msg);
  */
 ROSIDL_GENERATOR_C_PUBLIC_base_msgs
 base_msgs__msg__LocalSpeedsPoint *
-base_msgs__msg__LocalSpeedsPoint__create(void);
+base_msgs__msg__LocalSpeedsPoint__create();
 
 /// Destroy msg/LocalSpeedsPoint message.
 /**
@@ -101,30 +92,6 @@ bool
 base_msgs__msg__LocalSpeedsPoint__copy(
   const base_msgs__msg__LocalSpeedsPoint * input,
   base_msgs__msg__LocalSpeedsPoint * output);
-
-/// Retrieve pointer to the hash of the description of this type.
-ROSIDL_GENERATOR_C_PUBLIC_base_msgs
-const rosidl_type_hash_t *
-base_msgs__msg__LocalSpeedsPoint__get_type_hash(
-  const rosidl_message_type_support_t * type_support);
-
-/// Retrieve pointer to the description of this type.
-ROSIDL_GENERATOR_C_PUBLIC_base_msgs
-const rosidl_runtime_c__type_description__TypeDescription *
-base_msgs__msg__LocalSpeedsPoint__get_type_description(
-  const rosidl_message_type_support_t * type_support);
-
-/// Retrieve pointer to the single raw source text that defined this type.
-ROSIDL_GENERATOR_C_PUBLIC_base_msgs
-const rosidl_runtime_c__type_description__TypeSource *
-base_msgs__msg__LocalSpeedsPoint__get_individual_type_description_source(
-  const rosidl_message_type_support_t * type_support);
-
-/// Retrieve pointer to the recursive raw sources that defined the description of this type.
-ROSIDL_GENERATOR_C_PUBLIC_base_msgs
-const rosidl_runtime_c__type_description__TypeSource__Sequence *
-base_msgs__msg__LocalSpeedsPoint__get_type_description_sources(
-  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of msg/LocalSpeedsPoint messages.
 /**

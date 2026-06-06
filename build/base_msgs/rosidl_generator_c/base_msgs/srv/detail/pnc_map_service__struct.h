@@ -3,9 +3,6 @@
 // with input from base_msgs:srv/PNCMapService.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "base_msgs/srv/pnc_map_service.h"
-
-
 #ifndef BASE_MSGS__SRV__DETAIL__PNC_MAP_SERVICE__STRUCT_H_
 #define BASE_MSGS__SRV__DETAIL__PNC_MAP_SERVICE__STRUCT_H_
 
@@ -38,6 +35,7 @@ typedef struct base_msgs__srv__PNCMapService_Request__Sequence
   size_t capacity;
 } base_msgs__srv__PNCMapService_Request__Sequence;
 
+
 // Constants defined in the message
 
 // Include directives for member types
@@ -60,42 +58,6 @@ typedef struct base_msgs__srv__PNCMapService_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } base_msgs__srv__PNCMapService_Response__Sequence;
-
-// Constants defined in the message
-
-// Include directives for member types
-// Member 'info'
-#include "service_msgs/msg/detail/service_event_info__struct.h"
-
-// constants for array fields with an upper bound
-// request
-enum
-{
-  base_msgs__srv__PNCMapService_Event__request__MAX_SIZE = 1
-};
-// response
-enum
-{
-  base_msgs__srv__PNCMapService_Event__response__MAX_SIZE = 1
-};
-
-/// Struct defined in srv/PNCMapService in the package base_msgs.
-typedef struct base_msgs__srv__PNCMapService_Event
-{
-  service_msgs__msg__ServiceEventInfo info;
-  base_msgs__srv__PNCMapService_Request__Sequence request;
-  base_msgs__srv__PNCMapService_Response__Sequence response;
-} base_msgs__srv__PNCMapService_Event;
-
-// Struct for a sequence of base_msgs__srv__PNCMapService_Event.
-typedef struct base_msgs__srv__PNCMapService_Event__Sequence
-{
-  base_msgs__srv__PNCMapService_Event * data;
-  /// The number of valid items in data
-  size_t size;
-  /// The number of allocated items in data
-  size_t capacity;
-} base_msgs__srv__PNCMapService_Event__Sequence;
 
 #ifdef __cplusplus
 }

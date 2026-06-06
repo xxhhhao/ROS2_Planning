@@ -4,7 +4,6 @@
 
 #include "cstddef"
 #include "rosidl_runtime_c/message_type_support_struct.h"
-#include "base_msgs/msg/detail/obs_info__functions.h"
 #include "base_msgs/msg/detail/obs_info__struct.hpp"
 #include "rosidl_typesupport_cpp/identifier.hpp"
 #include "rosidl_typesupport_cpp/message_type_support.hpp"
@@ -73,9 +72,6 @@ static const rosidl_message_type_support_t ObsInfo_message_type_support_handle =
   ::rosidl_typesupport_cpp::typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_ObsInfo_message_typesupport_map),
   ::rosidl_typesupport_cpp::get_message_typesupport_handle_function,
-  &base_msgs__msg__ObsInfo__get_type_hash,
-  &base_msgs__msg__ObsInfo__get_type_description,
-  &base_msgs__msg__ObsInfo__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_cpp
